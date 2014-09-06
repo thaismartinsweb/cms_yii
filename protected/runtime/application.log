@@ -1,0 +1,644 @@
+2014/09/06 02:48:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /home/thais/workspace/cms/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/
+---
+2014/09/06 02:49:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/index".' in /home/thais/workspace/cms/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index')
+#1 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/
+---
+2014/09/06 02:49:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/index".' in /home/thais/workspace/cms/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index')
+#1 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/
+---
+2014/09/06 02:49:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/index".' in /home/thais/workspace/cms/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index')
+#1 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/
+---
+2014/09/06 02:56:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "cms".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('cms')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('cms')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/cms')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/cms
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 02:56:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 02:56:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "menu".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('menu')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('menu')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/menu')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/menu
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 02:56:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "photogallery".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('photogallery')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('photogallery')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/photogall...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/photogallery
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 03:06:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "teste".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('teste')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('teste')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/teste')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/teste
+---
+2014/09/06 03:06:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:06:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:07:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:07:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:07:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:07:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:07:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:07:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:10:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:10:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:10:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:15:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config/in...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:15:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config/in...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:15:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config/in...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:15:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config/te...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config/teste
+---
+2014/09/06 03:15:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config/te...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config/teste
+---
+2014/09/06 03:15:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config/in...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config/
+---
+2014/09/06 03:16:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config/in...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config/
+---
+2014/09/06 03:16:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config/in...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config/
+---
+2014/09/06 03:16:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config/in...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:17:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config/in...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:17:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config/in...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:17:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config/in...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:17:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config/in...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:17:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config/in...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+---
+2014/09/06 03:18:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config/in...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 03:18:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "config".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('config')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('config')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/config/in...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 03:19:03 [error] [exception.CException] exception 'CException' with message 'ConfigController cannot find the requested view "config".' in /home/thais/workspace/cms/framework/web/CController.php:878
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(782): CController->renderPartial('config', NULL, true)
+#1 /home/thais/workspace/cms/protected/controllers/ConfigController.php(7): CController->render('config')
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionIndex()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/index')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/config
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 03:19:21 [error] [exception.CException] exception 'CException' with message 'ConfigController cannot find the requested view "admin/config".' in /home/thais/workspace/cms/framework/web/CController.php:878
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(782): CController->renderPartial('admin/config', NULL, true)
+#1 /home/thais/workspace/cms/protected/controllers/ConfigController.php(7): CController->render('admin/config')
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionIndex()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/index')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/config
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 03:19:22 [error] [exception.CException] exception 'CException' with message 'ConfigController cannot find the requested view "admin/config".' in /home/thais/workspace/cms/framework/web/CController.php:878
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(782): CController->renderPartial('admin/config', NULL, true)
+#1 /home/thais/workspace/cms/protected/controllers/ConfigController.php(7): CController->render('admin/config')
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionIndex()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/index')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/config
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 03:19:55 [error] [exception.CException] exception 'CException' with message 'ConfigController cannot find the requested view "config".' in /home/thais/workspace/cms/framework/web/CController.php:878
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(782): CController->renderPartial('config', NULL, true)
+#1 /home/thais/workspace/cms/protected/controllers/ConfigController.php(7): CController->render('config')
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionIndex()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/index')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/config
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 03:19:56 [error] [exception.CException] exception 'CException' with message 'ConfigController cannot find the requested view "config".' in /home/thais/workspace/cms/framework/web/CController.php:878
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(782): CController->renderPartial('config', NULL, true)
+#1 /home/thais/workspace/cms/protected/controllers/ConfigController.php(7): CController->render('config')
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionIndex()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/index')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/config
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 03:19:56 [error] [exception.CException] exception 'CException' with message 'ConfigController cannot find the requested view "config".' in /home/thais/workspace/cms/framework/web/CController.php:878
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(782): CController->renderPartial('config', NULL, true)
+#1 /home/thais/workspace/cms/protected/controllers/ConfigController.php(7): CController->render('config')
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionIndex()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/index')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/config
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 03:22:50 [error] [exception.CException] exception 'CException' with message 'ConfigController cannot find the requested view "config".' in /home/thais/workspace/cms/framework/web/CController.php:878
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(782): CController->renderPartial('config', NULL, true)
+#1 /home/thais/workspace/cms/protected/controllers/ConfigController.php(7): CController->render('config')
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionIndex()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/index')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/config
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 03:24:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('index.html')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('index.html')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index.htm...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/index.html
+HTTP_REFERER=http://localhost/admin/config
+---
+2014/09/06 03:24:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cms/index".' in /home/thais/workspace/cms/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('cms/index')
+#1 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/cms
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 03:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cms/index".' in /home/thais/workspace/cms/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('cms/index')
+#1 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/cms
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 03:25:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cms/index".' in /home/thais/workspace/cms/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('cms/index')
+#1 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/cms
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 03:30:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('update')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('update')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/update')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/config/update
+---
+2014/09/06 03:30:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "teste".' in /home/thais/workspace/cms/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('teste')
+#1 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/teste
+---
+2014/09/06 03:36:12 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "index".' in /home/thais/workspace/cms/framework/web/CController.php:878
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#1 /home/thais/workspace/cms/protected/controllers/AdminController.php(15): CController->render('index', Array)
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/
+---
+2014/09/06 03:36:13 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "index".' in /home/thais/workspace/cms/framework/web/CController.php:878
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#1 /home/thais/workspace/cms/protected/controllers/AdminController.php(15): CController->render('index', Array)
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/
+---
+2014/09/06 03:36:30 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "index".' in /home/thais/workspace/cms/framework/web/CController.php:878
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#1 /home/thais/workspace/cms/protected/controllers/AdminController.php(15): CController->render('index', Array)
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/
+---
+2014/09/06 03:36:36 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "index".' in /home/thais/workspace/cms/framework/web/CController.php:878
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#1 /home/thais/workspace/cms/protected/controllers/AdminController.php(17): CController->render('index', Array)
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/
+---
+2014/09/06 03:40:13 [error] [exception.CException] exception 'CException' with message 'ConfigController cannot find the requested view "index".' in /home/thais/workspace/cms/framework/web/CController.php:878
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /home/thais/workspace/cms/protected/controllers/ConfigController.php(17): CController->render('index')
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionIndex()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/index')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/config
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 03:47:38 [error] [php] include(SubscriberFormWidget.php): failed to open stream: No such file or directory (/home/thais/workspace/cms/framework/YiiBase.php:427)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CWidgetFactory.php(146): import()
+#1 /home/thais/workspace/cms/framework/web/CBaseController.php(146): CWidgetFactory->createWidget()
+#2 /home/thais/workspace/cms/framework/web/CBaseController.php(172): AdminController->createWidget()
+#3 /home/thais/workspace/cms/protected/views/layouts/admin.php(202): AdminController->widget()
+#4 /home/thais/workspace/cms/framework/web/CBaseController.php(126): require()
+#5 /home/thais/workspace/cms/framework/web/CBaseController.php(95): AdminController->renderInternal()
+#6 /home/thais/workspace/cms/framework/web/CController.php(784): AdminController->renderFile()
+#7 /home/thais/workspace/cms/protected/controllers/AdminController.php(15): AdminController->render()
+#8 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#9 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /home/thais/workspace/cms/framework/web/CController.php(286): AdminController->runAction()
+#11 /home/thais/workspace/cms/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#12 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): AdminController->run()
+#13 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/
+in /home/thais/workspace/cms/protected/views/layouts/admin.php (202)
+in /home/thais/workspace/cms/protected/controllers/AdminController.php (15)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 03:47:52 [error] [exception.CException] exception 'CException' with message 'SideMenuWidget cannot find the view "sidemenu".' in /home/thais/workspace/cms/framework/web/widgets/CWidget.php:246
+Stack trace:
+#0 /home/thais/workspace/cms/protected/components/SideMenuWidget.php(7): CWidget->render('sidemenu')
+#1 /home/thais/workspace/cms/framework/web/CBaseController.php(173): SideMenuWidget->run()
+#2 /home/thais/workspace/cms/protected/views/layouts/admin.php(202): CBaseController->widget('SideMenuWidget')
+#3 /home/thais/workspace/cms/framework/web/CBaseController.php(126): require('/home/thais/wor...')
+#4 /home/thais/workspace/cms/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/thais/wor...', Array, true)
+#5 /home/thais/workspace/cms/framework/web/CController.php(784): CBaseController->renderFile('/home/thais/wor...', Array, true)
+#6 /home/thais/workspace/cms/protected/controllers/AdminController.php(15): CController->render('index', Array)
+#7 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#8 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('')
+#12 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#13 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/
+---

@@ -1,0 +1,115 @@
+MODELO - BANCO DE DADOS
+
+MENU
+ id
+ master
+ type_menu
+ title
+ description
+ image
+ special
+ exibition
+ 
+ TYPE_MENU
+  id
+  title
+  controller
+ 
+TYPE_PAGE
+ id
+ title
+ description
+ content
+ image
+ 
+CONTENT
+ id
+ id_menu
+ title
+ description
+ content
+ image
+ date_created
+ published
+ 
+PHOTO_GALLERY
+ id
+ title
+ order
+
+PHOTO
+ id
+ photo_gallery_id
+ title
+ description
+ image
+
+VIDEO_GALLERY
+ id
+ title
+
+VIDEO
+ id
+ id_video_gallery
+ title
+ description
+ url
+
+PRODUCT_CATEGORY
+ id
+ title
+ description
+ image
+
+PRODUCT
+ id
+ id_product_category
+ title
+ description
+ content
+ image
+
+CONFIGURATION
+ id
+ title
+ logo
+ email
+ contact
+ address
+
+SOCIAL
+ id
+ id_social_type
+ title
+ link
+
+SOCIAL_TYPE
+ id
+ title
+
+USER
+ id
+ id_user_group
+ name
+ email
+ image
+
+USER_GROUP
+ id
+ title
+
+USER_GROUP_MODULE
+ id_user_group
+ id_module
+
+MODULE
+ id
+ title
+ controller
+ icon
+
+MODULE_ACTION
+ id
+ module_id
+ method
+ icon
