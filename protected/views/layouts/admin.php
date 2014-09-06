@@ -1,14 +1,3 @@
-<?php
-// $this->widget('zii.widgets.CMenu',array(
-// 			'items'=>array(
-// 				array('label'=>'Home', 'url'=>array('/site/index')),
-// 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-// 				array('label'=>'Contact', 'url'=>array('/site/contact')),
-// 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-// 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-// 			),
-// ));
-?>
 <!DOCTYPE html>
 <html>
 
@@ -94,12 +83,13 @@
 					<div class="col-lg-12">
 					<h3 class="page-header text-asbestos"><?php echo CHtml::encode(Yii::app()->name); ?></h3>
 					
-					<?php if(isset($this->breadcrumbs)):?>
-						<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-								'links'=>$this->breadcrumbs,
-								'homeLink' => CHtml::link('Home', Yii::app()->homeUrl . 'admin'),)); ?>
-					<?php endif?>			
-					
+						<div style="margin:25px 0 15px 0;">
+							<?php if(isset($this->breadcrumbs)):?>
+								<?php $this->widget('zii.widgets.CBreadcrumbs', array(
+										'links'=>$this->breadcrumbs,
+										'homeLink' => CHtml::link('Home', Yii::app()->homeUrl . 'admin'),)); ?>
+							<?php endif?>
+						</div>
 					</div>
 				</div>
 

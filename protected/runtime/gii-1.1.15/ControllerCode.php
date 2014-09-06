@@ -2,5 +2,5 @@
 return array (
   'template' => 'default',
   'baseClass' => 'Controller',
-  'actions' => 'index',
+  'actions' => 'index update beforeAction returnCurrentModel edit',
 );

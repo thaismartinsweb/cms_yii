@@ -54,6 +54,5 @@ class ConfigController extends Controller
 			
 			return Config::model();
 		}
-
 	}
 }
