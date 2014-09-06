@@ -92,13 +92,88 @@ drop table config;
 CREATE TABLE `cms`.`config` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(200) NOT NULL,
-  `logo` VARCHAR(100) NULL,
+  `image` VARCHAR(100),
   `email` VARCHAR(200) NOT NULL,
-  `contact` VARCHAR(100) NULL,
-  `address` TEXT NULL,
+  `contact` VARCHAR(100),
+  `address` TEXT,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_general_ci;
 
 select * from config;
+delete from config where id = 1;
+
+CREATE TABLE `cms`.`type_menu` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(100) NOT NULL,
+  `controller` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+CREATE TABLE `cms`.`menu` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `master_id` INT NULL,
+  `type_menu_id` INT NOT NULL,
+  `title` VARCHAR(100) NOT NULL,
+  `description` TEXT NULL,
+  `image` VARCHAR(100) NULL,
+  `special` INT NULL,
+  `exibition` INT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_type_menu_idx` (`type_menu_id` ASC),
+  CONSTRAINT `fk_type_menu`
+    FOREIGN KEY (`type_menu_id`)
+    REFERENCES `cms`.`type_menu` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+ALTER TABLE `cms`.`menu` 
+ADD CONSTRAINT `fk_master`
+  FOREIGN KEY (`master_id`)
+  REFERENCES `cms`.`menu` (`id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+CREATE TABLE `cms`.`type_page` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(100) NOT NULL,
+  `description` TEXT NULL,
+  `page` VARCHAR(100) NOT NULL,
+  `image` VARCHAR(100) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+truncate table menu;
+select * from menu;
+select * from type_menu;
+
+CREATE TABLE `cms`.`content` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `menu_id` INT NULL,
+  `type_page_id` INT NULL,
+  `title` VARCHAR(45) NOT NULL,
+  `description` VARCHAR(45) NULL,
+  `content` VARCHAR(45) NULL,
+  `image` VARCHAR(45) NULL,
+  `date_create` DATETIME NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_menu_idx` (`menu_id` ASC),
+  INDEX `fk_type_page_idx` (`type_page_id` ASC),
+  CONSTRAINT `fk_menu`
+    FOREIGN KEY (`menu_id`)
+    REFERENCES `cms`.`menu` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_type_page`
+    FOREIGN KEY (`type_page_id`)
+    REFERENCES `cms`.`type_page` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);

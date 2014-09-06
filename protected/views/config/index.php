@@ -39,7 +39,7 @@
 						<?php echo CHtml::activeTextField($model,'address', array('class' => 'form-control field-xxlg', 'placeholder' => 'Rua Blabla, 123')) ?>
 					</div>
 					
-					<?php echo CHtml::submitButton($model->isNewRecord ? 'Salvar' : 'Alterar', array('class' => 'btn btn-primary')); ?>
+					<?php echo CHtml::submitButton($model->id ? 'Alterar' : 'Salvar', array('class' => 'btn btn-primary')); ?>
 					
 				<?php echo CHtml::endForm(); ?>
 			</div>

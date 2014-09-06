@@ -40,11 +40,18 @@
 									<tr>
 										<td><?php echo $content['id']?></td>
 										<td>
-											<a href="<?php echo Yii::app()->params['adminUrl']?>content/edit/<?php echo $content['id']?>"><?php echo $content['title']?></a>
+											<a href="<?php echo Yii::app()->params['adminUrl']?>content/edit/<?php echo $content['id']?>">
+												<?php echo $item['title']?>
+											</a>
 										</td>
-										<td></td>
+										<td><?php echo Menu::model()->findTitle($content['menu_id']);?></td>
 										<td>
-											<a href="<?php echo Yii::app()->params['adminUrl']?>content/edit/<?php echo $content['id']?>"><i class="">Teste</i></a>
+											<a href="<?php echo Yii::app()->params['adminUrl']?>content/edit/<?php echo $content['id']?>" title="Editar" class="btn btn-primary btn-circle">
+												<i class="fa fa-edit"></i>
+											</a>
+											<a href="<?php echo Yii::app()->params['adminUrl']?>content/remove/<?php echo $content['id']?>" title="Excluir" class="btn btn-danger btn-circle">
+												<i class="fa fa-times"></i>
+											</a>
 										</td>
 									</tr>
 								<?php } ?>

@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs = array(
-	'Menu'=>array('admin/menu'),
+	'Conteúdo' => array('admin/content'),
 	 $model->id ? 'Editar Conteúdo' : 'Adicionar Conteúdo',
 );
 ?>

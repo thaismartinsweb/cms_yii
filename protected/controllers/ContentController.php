@@ -1,26 +1,26 @@
 <?php
 
-class MenuController extends Controller
+class ContentController extends Controller
 {
 	public function beforeAction($action)
 	{
 		$this->layout = 'admin';
-		$this->breadcrumbs = array('Menu');
+		$this->breadcrumbs = array('Conteúdo');
 		return parent::beforeAction($action);
 	}
 
 	public function actionEdit($id = null)
 	{
 		
-		if(isset($_POST['Menu']))
+		if(isset($_POST['Content']))
 		{
-			$model = $this->savePost($_POST['Menu']);
+			$model = $this->savePost($_POST['Content']);
 		}
 		else {
 			$model = $this->returnCurrentModel($id);
 		}
 		
-		$types = $this->getTypesMenu();
+		$types = $this->getTypesPage();
 		$menus = $this->getMenus();
 		
 		$data = array('model' => $model, 'types' => $types, 'menus' => $menus);
@@ -69,7 +69,7 @@ class MenuController extends Controller
 
 	public function actionIndex()
 	{
-		$itens = Menu::model()->findAll();
+		$itens = Content::model()->findAll();
 		$data = array('itens' => $itens);
 		$this->render('index', $data);
 	}
@@ -96,13 +96,13 @@ class MenuController extends Controller
 		}
 	}
 	
-	private function getTypesMenu(){
+	private function getTypesPage(){
 		
-		$itens = TypeMenu::model()->findAll();
+// 		$itens = TypePage::model()->findAll();
 		
-		if($itens){
-			return CHtml::listData($itens, 'id', 'title');
-		}
+// 		if($itens){
+// 			return CHtml::listData($itens, 'id', 'title');
+// 		}
 		
 		return false;
 	}

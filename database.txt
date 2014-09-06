@@ -19,7 +19,7 @@ TYPE_PAGE
  id
  title
  description
- content
+ page
  image
  
 CONTENT
@@ -30,8 +30,7 @@ CONTENT
  description
  content
  image
- date_created
- published
+ date_create
  
 PHOTO_GALLERY
  id
