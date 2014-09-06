@@ -87,4 +87,18 @@ select * from module_action;
 select * from type_page;
 select * from type_menu;
 
-select * from menu where menu_id = 0;
+
+drop table config;
+CREATE TABLE `cms`.`config` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(200) NOT NULL,
+  `logo` VARCHAR(100) NULL,
+  `email` VARCHAR(200) NOT NULL,
+  `contact` VARCHAR(100) NULL,
+  `address` TEXT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+select * from config;

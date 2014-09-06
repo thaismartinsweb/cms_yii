@@ -96,14 +96,13 @@
 					
 					<?php if(isset($this->breadcrumbs)):?>
 						<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-								'links'=>$this->breadcrumbs, )); ?>
+								'links'=>$this->breadcrumbs,
+								'homeLink' => CHtml::link('Home', Yii::app()->homeUrl . 'admin'),)); ?>
 					<?php endif?>			
 					
 					</div>
 				</div>
-				TESTEEEEEEEEEEEEEEEEEEEEEEE
-				<br><br>
-	
+
 				<?php echo $content; ?>
 				
 			</div>

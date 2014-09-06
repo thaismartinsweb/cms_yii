@@ -1577,7 +1577,7 @@ textarea.form-control {
   height: auto; }
 
 .form-group {
-  margin-bottom: 15px; }
+  margin: 20px 0;}
 
 .radio,
 .checkbox {
@@ -4007,7 +4007,7 @@ a.list-group-item {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
 
 .panel-body {
-  padding: 15px; }
+  padding: 25px; }
   .panel-body:before, .panel-body:after {
     content: " ";
     /* 1 */
@@ -5085,3 +5085,20 @@ td.visible-print {
   th.hidden-print,
   td.hidden-print {
     display: none !important; } }
+    
+    
+    
+.field-sm {
+	max-width:200px }
+	
+.field-md {
+	max-width:300px }
+	
+.field-lg {
+	max-width:400px }
+
+.field-xlg {
+	max-width:500px }
+
+.field-xxlg {
+	max-width:600px }

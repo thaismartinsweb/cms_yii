@@ -2,8 +2,8 @@ MODELO - BANCO DE DADOS
 
 MENU
  id
- master
- type_menu
+ master_id
+ type_menu_id
  title
  description
  image
@@ -24,7 +24,8 @@ TYPE_PAGE
  
 CONTENT
  id
- id_menu
+ menu_id
+ type_page_id
  title
  description
  content
@@ -69,7 +70,7 @@ PRODUCT
  content
  image
 
-CONFIGURATION
+CONFIG
  id
  title
  logo

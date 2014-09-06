@@ -642,3 +642,754 @@ Stack trace:
 #15 {main}
 REQUEST_URI=/admin/
 ---
+2014/09/06 11:46:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/thais/workspace/cms/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/09/06 11:53:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "content".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('content')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('content')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/content/e...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/content/edit/1
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 11:55:35 [error] [php] Undefined variable: contents (/home/thais/workspace/cms/protected/views/admin/index.php:38)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(869): AdminController->renderFile()
+#1 /home/thais/workspace/cms/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /home/thais/workspace/cms/protected/controllers/AdminController.php(15): AdminController->render()
+#3 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/thais/workspace/cms/framework/web/CController.php(286): AdminController->runAction()
+#6 /home/thais/workspace/cms/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): AdminController->run()
+#8 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/
+in /home/thais/workspace/cms/protected/views/admin/index.php (38)
+in /home/thais/workspace/cms/protected/controllers/AdminController.php (15)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 11:55:37 [error] [php] Undefined variable: contents (/home/thais/workspace/cms/protected/views/admin/index.php:38)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(869): AdminController->renderFile()
+#1 /home/thais/workspace/cms/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /home/thais/workspace/cms/protected/controllers/AdminController.php(15): AdminController->render()
+#3 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/thais/workspace/cms/framework/web/CController.php(286): AdminController->runAction()
+#6 /home/thais/workspace/cms/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): AdminController->run()
+#8 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/
+in /home/thais/workspace/cms/protected/views/admin/index.php (38)
+in /home/thais/workspace/cms/protected/controllers/AdminController.php (15)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 12:02:08 [error] [php] Undefined variable: model (/home/thais/workspace/cms/protected/views/config/index.php:4)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(869): ConfigController->renderFile()
+#1 /home/thais/workspace/cms/framework/web/CController.php(782): ConfigController->renderPartial()
+#2 /home/thais/workspace/cms/protected/controllers/ConfigController.php(13): ConfigController->render()
+#3 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionIndex()
+#4 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#6 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#8 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config
+in /home/thais/workspace/cms/protected/views/config/index.php (4)
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (13)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 12:02:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "about/index".' in /home/thais/workspace/cms/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('about/index')
+#1 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/about
+---
+2014/09/06 12:02:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('index.php')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('index.php')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index.php...')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/index.php/site/index
+---
+2014/09/06 12:02:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in /home/thais/workspace/cms/framework/web/CController.php:483
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(270): CController->missingAction('index.php')
+#1 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('index.php')
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index.php')
+#3 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/index.php?r=site/page&view=about
+---
+2014/09/06 12:06:23 [error] [exception.CException] exception 'CException' with message 'Property "Module.username" is not defined.' in /home/thais/workspace/cms/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/thais/workspace/cms/framework/db/ar/CActiveRecord.php(145): CComponent->__get('username')
+#1 /home/thais/workspace/cms/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('username')
+#2 /home/thais/workspace/cms/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(Module), 'username')
+#3 /home/thais/workspace/cms/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(Module), 'username', Array)
+#4 /home/thais/workspace/cms/protected/views/config/index.php(8): CHtml::activeTextField(Object(Module), 'username')
+#5 /home/thais/workspace/cms/framework/web/CBaseController.php(126): require('/home/thais/wor...')
+#6 /home/thais/workspace/cms/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/thais/wor...', Array, true)
+#7 /home/thais/workspace/cms/framework/web/CController.php(869): CBaseController->renderFile('/home/thais/wor...', Array, true)
+#8 /home/thais/workspace/cms/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /home/thais/workspace/cms/protected/controllers/ConfigController.php(17): CController->render('index', Array)
+#10 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionIndex()
+#11 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('index')
+#15 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/index')
+#16 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/admin/config
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 12:07:01 [error] [exception.CException] exception 'CException' with message 'Property "Config.username" is not defined.' in /home/thais/workspace/cms/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/thais/workspace/cms/framework/db/ar/CActiveRecord.php(145): CComponent->__get('username')
+#1 /home/thais/workspace/cms/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('username')
+#2 /home/thais/workspace/cms/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(Config), 'username')
+#3 /home/thais/workspace/cms/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(Config), 'username', Array)
+#4 /home/thais/workspace/cms/protected/views/config/index.php(8): CHtml::activeTextField(Object(Config), 'username')
+#5 /home/thais/workspace/cms/framework/web/CBaseController.php(126): require('/home/thais/wor...')
+#6 /home/thais/workspace/cms/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/thais/wor...', Array, true)
+#7 /home/thais/workspace/cms/framework/web/CController.php(869): CBaseController->renderFile('/home/thais/wor...', Array, true)
+#8 /home/thais/workspace/cms/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /home/thais/workspace/cms/protected/controllers/ConfigController.php(17): CController->render('index', Array)
+#10 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionIndex()
+#11 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('index')
+#15 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/index')
+#16 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/admin/config
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 12:08:21 [error] [exception.CException] exception 'CException' with message 'Property "Config.username" is not defined.' in /home/thais/workspace/cms/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/thais/workspace/cms/framework/db/ar/CActiveRecord.php(145): CComponent->__get('username')
+#1 /home/thais/workspace/cms/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('username')
+#2 /home/thais/workspace/cms/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(Config), 'username')
+#3 /home/thais/workspace/cms/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(Config), 'username', Array)
+#4 /home/thais/workspace/cms/protected/views/config/index.php(8): CHtml::activeTextField(Object(Config), 'username')
+#5 /home/thais/workspace/cms/framework/web/CBaseController.php(126): require('/home/thais/wor...')
+#6 /home/thais/workspace/cms/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/thais/wor...', Array, true)
+#7 /home/thais/workspace/cms/framework/web/CController.php(869): CBaseController->renderFile('/home/thais/wor...', Array, true)
+#8 /home/thais/workspace/cms/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /home/thais/workspace/cms/protected/controllers/ConfigController.php(17): CController->render('index', Array)
+#10 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionIndex()
+#11 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('index')
+#15 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/index')
+#16 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/admin/config
+HTTP_REFERER=http://localhost/admin/
+---
+2014/09/06 12:30:48 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/home/thais/workspace/cms/framework/web/helpers/CHtml.php:103)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/helpers/CHtml.php(158): renderAttributes()
+#1 /home/thais/workspace/cms/framework/web/helpers/CHtml.php(2255): tag()
+#2 /home/thais/workspace/cms/framework/web/helpers/CHtml.php(1434): activeInputField()
+#3 /home/thais/workspace/cms/protected/views/config/index.php(17): activeTextField()
+#4 /home/thais/workspace/cms/framework/web/CBaseController.php(126): require()
+#5 /home/thais/workspace/cms/framework/web/CBaseController.php(95): ConfigController->renderInternal()
+#6 /home/thais/workspace/cms/framework/web/CController.php(869): ConfigController->renderFile()
+#7 /home/thais/workspace/cms/framework/web/CController.php(782): ConfigController->renderPartial()
+#8 /home/thais/workspace/cms/protected/controllers/ConfigController.php(18): ConfigController->render()
+#9 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionIndex()
+#10 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#12 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#13 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#14 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config
+in /home/thais/workspace/cms/protected/views/config/index.php (17)
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (18)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:09:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/thais/workspace/cms/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/09/06 13:09:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/thais/workspace/cms/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/09/06 13:16:36 [error] [php] Array to string conversion (/home/thais/workspace/cms/framework/web/helpers/CHtml.php:2181)
+Stack trace:
+#0 /home/thais/workspace/cms/protected/views/config/index.php(15): activeLabel()
+#1 /home/thais/workspace/cms/framework/web/CBaseController.php(126): require()
+#2 /home/thais/workspace/cms/framework/web/CBaseController.php(95): ConfigController->renderInternal()
+#3 /home/thais/workspace/cms/framework/web/CController.php(869): ConfigController->renderFile()
+#4 /home/thais/workspace/cms/framework/web/CController.php(782): ConfigController->renderPartial()
+#5 /home/thais/workspace/cms/protected/controllers/ConfigController.php(17): ConfigController->render()
+#6 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionIndex()
+#7 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#9 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#10 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#11 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config
+in /home/thais/workspace/cms/protected/views/config/index.php (15)
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (17)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:21:47 [error] [php] Undefined index: id (/home/thais/workspace/cms/protected/controllers/ConfigController.php:25)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#1 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#2 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#3 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config/update
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (25)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:28:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/thais/workspace/cms/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/09/06 13:38:51 [error] [exception.CException] exception 'CException' with message 'Property "Config.image" is not defined.' in /home/thais/workspace/cms/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/thais/workspace/cms/framework/db/ar/CActiveRecord.php(145): CComponent->__get('image')
+#1 /home/thais/workspace/cms/protected/controllers/ConfigController.php(32): CActiveRecord->__get('image')
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('update')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/update')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/config/update
+HTTP_REFERER=http://localhost/config/index
+---
+2014/09/06 13:41:08 [error] [php] Missing argument 2 for CHtml::activeFileField(), called in /home/thais/workspace/cms/protected/views/config/index.php on line 21 and defined (/home/thais/workspace/cms/framework/web/helpers/CHtml.php:1669)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CBaseController.php(95): ConfigController->renderInternal()
+#1 /home/thais/workspace/cms/framework/web/CController.php(869): ConfigController->renderFile()
+#2 /home/thais/workspace/cms/framework/web/CController.php(782): ConfigController->renderPartial()
+#3 /home/thais/workspace/cms/protected/controllers/ConfigController.php(17): ConfigController->render()
+#4 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionIndex()
+#5 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#7 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#8 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#9 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config
+in /home/thais/workspace/cms/protected/views/config/index.php (21)
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (17)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:41:33 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:41:33 [error] [exception.CException] exception 'CException' with message 'Property "Config.image" is not defined.' in /home/thais/workspace/cms/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/thais/workspace/cms/framework/db/ar/CActiveRecord.php(145): CComponent->__get('image')
+#1 /home/thais/workspace/cms/protected/controllers/ConfigController.php(32): CActiveRecord->__get('image')
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('update')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/update')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/config/update
+HTTP_REFERER=http://localhost/config/index
+---
+2014/09/06 13:42:16 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:42:16 [error] [exception.CException] exception 'CException' with message 'Property "Config.image" is not defined.' in /home/thais/workspace/cms/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/thais/workspace/cms/framework/db/ar/CActiveRecord.php(145): CComponent->__get('image')
+#1 /home/thais/workspace/cms/protected/controllers/ConfigController.php(32): CActiveRecord->__get('image')
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('update')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/update')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/config/update
+HTTP_REFERER=http://localhost/config/index
+---
+2014/09/06 13:43:04 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:43:04 [error] [exception.CException] exception 'CException' with message 'Property "Config.image" is not defined.' in /home/thais/workspace/cms/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/thais/workspace/cms/framework/db/ar/CActiveRecord.php(145): CComponent->__get('image')
+#1 /home/thais/workspace/cms/protected/controllers/ConfigController.php(32): CActiveRecord->__get('image')
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('update')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/update')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/config/update
+HTTP_REFERER=http://localhost/config/index
+---
+2014/09/06 13:43:51 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:43:51 [error] [exception.CException] exception 'CException' with message 'Property "Config.image" is not defined.' in /home/thais/workspace/cms/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/thais/workspace/cms/framework/db/ar/CActiveRecord.php(145): CComponent->__get('image')
+#1 /home/thais/workspace/cms/protected/controllers/ConfigController.php(32): CActiveRecord->__get('image')
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('update')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/update')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/config/update
+HTTP_REFERER=http://localhost/config/index
+---
+2014/09/06 13:45:36 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:45:36 [error] [php] Missing argument 2 for CUploadedFile::getInstance(), called in /home/thais/workspace/cms/protected/controllers/ConfigController.php on line 28 and defined (/home/thais/workspace/cms/framework/web/CUploadedFile.php:57)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#2 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#3 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#4 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config/update
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (28)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:45:47 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:45:47 [error] [exception.CException] exception 'CException' with message 'Property "Config.image" is not defined.' in /home/thais/workspace/cms/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/thais/workspace/cms/framework/db/ar/CActiveRecord.php(145): CComponent->__get('image')
+#1 /home/thais/workspace/cms/protected/controllers/ConfigController.php(32): CActiveRecord->__get('image')
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('update')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/update')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/config/update
+HTTP_REFERER=http://localhost/config/index
+---
+2014/09/06 13:45:53 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:45:53 [error] [exception.CException] exception 'CException' with message 'Property "Config.image" is not defined.' in /home/thais/workspace/cms/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/thais/workspace/cms/framework/db/ar/CActiveRecord.php(145): CComponent->__get('image')
+#1 /home/thais/workspace/cms/protected/controllers/ConfigController.php(32): CActiveRecord->__get('image')
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('update')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/update')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/config/update
+HTTP_REFERER=http://localhost/config/index
+---
+2014/09/06 13:47:19 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:47:19 [error] [exception.CException] exception 'CException' with message 'Property "Config.logo" is not defined.' in /home/thais/workspace/cms/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/thais/workspace/cms/framework/db/ar/CActiveRecord.php(161): CComponent->__set('logo', NULL)
+#1 /home/thais/workspace/cms/protected/controllers/ConfigController.php(28): CActiveRecord->__set('logo', NULL)
+#2 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#3 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/thais/workspace/cms/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/thais/workspace/cms/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): CController->run('update')
+#7 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController('config/update')
+#8 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/thais/workspace/cms/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/config/update
+HTTP_REFERER=http://localhost/config/index
+---
+2014/09/06 13:47:43 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:48:44 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:48:48 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:49:13 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:49:28 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:50:21 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:50:24 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:50:38 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:50:54 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:51:05 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:51:28 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:51:36 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:51:41 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:53:34 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:53:50 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:54:02 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:54:14 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:54:19 [warning] [application] Failed to set unsafe attribute "logo" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:54:40 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:54:56 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:55:08 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:55:17 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:55:31 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:55:43 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:55:43 [error] [php] move_uploaded_file(/public/config/image.jpg): failed to open stream: No such file or directory (/home/thais/workspace/cms/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#1 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#3 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#4 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#5 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config/update
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (33)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:55:50 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:55:50 [error] [php] move_uploaded_file(/public/config/): failed to open stream: No such file or directory (/home/thais/workspace/cms/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#1 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#3 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#4 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#5 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config/update
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (33)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:55:54 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:55:54 [error] [php] move_uploaded_file(/public/config): failed to open stream: No such file or directory (/home/thais/workspace/cms/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#1 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#3 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#4 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#5 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config/update
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (33)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:56:31 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:56:31 [error] [php] move_uploaded_file(): The second argument to copy() function cannot be a directory (/home/thais/workspace/cms/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#1 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#3 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#4 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#5 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config/update
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (33)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:56:41 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:56:41 [error] [php] move_uploaded_file(/public/config): failed to open stream: No such file or directory (/home/thais/workspace/cms/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#1 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#3 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#4 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#5 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config/update
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (33)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:56:58 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:56:58 [error] [php] move_uploaded_file(): The second argument to copy() function cannot be a directory (/home/thais/workspace/cms/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#1 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#3 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#4 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#5 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config/update
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (33)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:57:13 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:57:13 [error] [php] move_uploaded_file(): The second argument to copy() function cannot be a directory (/home/thais/workspace/cms/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#1 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#3 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#4 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#5 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config/update
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (33)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:57:20 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:57:20 [error] [php] move_uploaded_file(/public/config/): failed to open stream: No such file or directory (/home/thais/workspace/cms/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#1 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#3 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#4 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#5 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config/update
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (33)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:57:59 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:58:22 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:58:22 [error] [php] move_uploaded_file(): The second argument to copy() function cannot be a directory (/home/thais/workspace/cms/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#1 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#3 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#4 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#5 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config/update
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (32)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:58:31 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:58:31 [error] [php] move_uploaded_file(var/www/html/public/config): failed to open stream: No such file or directory (/home/thais/workspace/cms/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#1 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#3 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#4 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#5 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config/update
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (32)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:58:39 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:58:39 [error] [php] move_uploaded_file(var/www/html/public/config/): failed to open stream: No such file or directory (/home/thais/workspace/cms/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#1 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#3 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#4 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#5 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config/update
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (32)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:58:46 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:58:46 [error] [php] move_uploaded_file(): The second argument to copy() function cannot be a directory (/home/thais/workspace/cms/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#1 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#3 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#4 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#5 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config/update
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (32)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:59:00 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:59:00 [error] [php] move_uploaded_file(): The second argument to copy() function cannot be a directory (/home/thais/workspace/cms/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#1 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#3 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#4 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#5 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config/update
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (32)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:59:04 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:59:04 [error] [php] move_uploaded_file(/public/config/): failed to open stream: No such file or directory (/home/thais/workspace/cms/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#1 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#3 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#4 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#5 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config/update
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (32)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:59:12 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 13:59:12 [error] [php] move_uploaded_file(): The second argument to copy() function cannot be a directory (/home/thais/workspace/cms/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /home/thais/workspace/cms/framework/web/actions/CInlineAction.php(49): ConfigController->actionUpdate()
+#1 /home/thais/workspace/cms/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/thais/workspace/cms/framework/web/CController.php(286): ConfigController->runAction()
+#3 /home/thais/workspace/cms/framework/web/CController.php(265): ConfigController->runActionWithFilters()
+#4 /home/thais/workspace/cms/framework/web/CWebApplication.php(282): ConfigController->run()
+#5 /home/thais/workspace/cms/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/thais/workspace/cms/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/thais/workspace/cms/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/config/update
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (32)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 14:00:07 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 14:00:16 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)
+2014/09/06 14:03:55 [warning] [application] Failed to set unsafe attribute "image" of "Config".
+in /home/thais/workspace/cms/protected/controllers/ConfigController.php (27)
+in /home/thais/workspace/cms/index.php (13)

@@ -10,7 +10,9 @@ class AdminController extends Controller
 	public function actionIndex()
 	{
 		$modules = Module::model()->findAll();
-		$data = array('modules' => $modules);
+// 		$contents = Content::model()->findAll();
+		$contents = false;
+		$data = array('modules' => $modules, 'contents' => $contents);
 		
 		$this->render('index', $data);
 	}
