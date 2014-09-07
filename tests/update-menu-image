@@ -19,7 +19,7 @@
 <tr>
 	<td>type</td>
 	<td>id=Menu_title</td>
-	<td>Teste de Título 3</td>
+	<td>[UPDATE IMAGE] Teste de Título 3</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -34,19 +34,18 @@
 <tr>
 	<td>type</td>
 	<td>id=Menu_description</td>
-	<td>3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at justo non urna egestas sagittis nec in elit. Ut enim neque, molestie euismod consequat vitae, facilisis sed diam. Sed eu maximus est. Proin pellentesque, tortor eget condimentum tincidunt, nisl libero rutrum mi, et rutrum tellus risus a ligula. Mauris congue aliquam lacinia. Sed non sodales nunc. Vestibulum et eros suscipit, scelerisque massa a, vulputate augue. Curabitur ac dui aliquet, vulputate sem non, scelerisque urna. In sed cursus felis. Mauris eu fermentum elit, nec convallis justo. </td>
+	<td>[UPDATE IMAGE] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at justo non urna egestas sagittis nec in elit. Ut enim neque, molestie euismod consequat vitae, facilisis sed diam. Sed eu maximus est. Proin pellentesque, tortor eget condimentum tincidunt, nisl libero rutrum mi, et rutrum tellus risus a ligula. Mauris congue aliquam lacinia. Sed non sodales nunc. Vestibulum et eros suscipit, scelerisque massa a, vulputate augue. Curabitur ac dui aliquet, vulputate sem non, scelerisque urna. In sed cursus felis. Mauris eu fermentum elit, nec convallis justo. </td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>id=Menu_exibition</td>
-	<td></td>
+	<td>1</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
 	<td>name=yt0</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>
