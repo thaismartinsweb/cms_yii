@@ -93,4 +93,15 @@ class TypeVideo extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	
+	public function findTitle($id){
+	
+		$type = $this->findAllByPk($id);
+	
+		if($type){
+			return $type[0]->title;
+		}
+	
+		return '---';
+	}
 }

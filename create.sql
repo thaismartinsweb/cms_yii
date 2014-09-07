@@ -139,7 +139,7 @@ COLLATE = utf8_general_ci;
 
 
 
-CREATE TABLE `cms`.`video` (
+CREATE TABLE `cms`.`type_video` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(100) NULL,
   `type` VARCHAR(100) NULL,
@@ -148,14 +148,45 @@ ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_general_ci;
 
+INSERT INTO type_video VALUES
+(null, 'YouTube', 'youtube'),
+(null, 'Vimeo', 'vimeo');
 
 
+CREATE TABLE `cms`.`video_gallery` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(100) NOT NULL,
+  `exibition` INT NULL,
+  `date_create` DATETIME NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
-
-
-
-
-
+CREATE TABLE `cms`.`video` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `video_gallery_id` INT NULL,
+  `type_video_id` INT NOT NULL,
+  `title` VARCHAR(100) NOT NULL,
+  `description` TEXT NULL,
+  `url` VARCHAR(200) NULL,
+  `date_create` DATETIME NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_video_gallery_idx` (`video_gallery_id` ASC),
+  INDEX `fk_type_video_idx` (`type_video_id` ASC),
+  CONSTRAINT `fk_video_gallery`
+    FOREIGN KEY (`video_gallery_id`)
+    REFERENCES `cms`.`video_gallery` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_type_video`
+    FOREIGN KEY (`type_video_id`)
+    REFERENCES `cms`.`type_video` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 

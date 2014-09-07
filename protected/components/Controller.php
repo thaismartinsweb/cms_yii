@@ -121,6 +121,18 @@ class Controller extends CController
 		return false;
 	}
 	
+	protected function getVideoGalleries()
+	{
+		$itens = VideoGallery::model()->findAll();
+	
+		if($itens){
+			return CHtml::listData($itens, 'id', 'title');
+		}
+	
+		return false;
+	}
+	
+	
 	protected function getMenus()
 	{
 		$itens = Menu::model()->findAll();
@@ -146,5 +158,6 @@ class Controller extends CController
 			}
 		}
 	}
+	
 	
 }

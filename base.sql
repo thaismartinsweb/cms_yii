@@ -21,3 +21,4 @@ drop table menu;
 
 select * from type_page;
 select * from type_menu;
+select * from video_gallery;

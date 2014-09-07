@@ -1,12 +1,12 @@
 <?php
 
-class VideogalleryController extends Controller
+class VideoController extends Controller
 {
 	public function beforeAction($action)
 	{
 		$this->layout = 'admin';
-		$this->model  = 'VideoGallery';
-		$this->post   = isset($_POST['VideoGallery']) ? $_POST['VideoGallery'] : false;
+		$this->model  = 'Video';
+		$this->post   = isset($_POST['Video']) ? $_POST['Video'] : false;
 		$this->resolvePostAction($action);
 		return parent::beforeAction($action);
 	}
@@ -14,10 +14,12 @@ class VideogalleryController extends Controller
 	public function actionEdit($id = null)
 	{
 		if($id){
-			$this->breadcrumbs = array('Galeria de Videos' => array('admin/'.strtolower($this->model)), 'Editar Conteúdo');
+			$this->breadcrumbs = array('Video' => array('admin/'.strtolower($this->model)), 'Editar Conteúdo');
 			
 			$model = $this->getCurrentModel($id);
-			$data = array('model' => $model);
+			$data = array(	'model' => $model,
+							'types' => $this->getTypesVideo(),
+							'galleries' => $this->getVideoGalleries());
 			
 			$this->render('edit', $data);
 		} else {
@@ -27,18 +29,20 @@ class VideogalleryController extends Controller
 
 	public function actionNew()
 	{
-		$this->breadcrumbs = array('Galeria de Videos' => array('admin/'.strtolower($this->model)), 'Adicionar Conteúdo');
+		$this->breadcrumbs = array('Video' => array('admin/'.strtolower($this->model)), 'Adicionar Conteúdo');
 		
 		$model = $this->getCurrentModel();
-		$data = array('model' => $model);
+		$data = array(	'model' => $model,
+						'types' => $this->getTypesVideo(),
+						'galleries' => $this->getVideoGalleries());
 		
 		$this->render('edit', $data);		
 	}
 
 	public function actionIndex()
 	{
-		$this->breadcrumbs = array('Galeria de Videos');
-		$itens = VideoGallery::model()->findAll();
+		$this->breadcrumbs = array('Video');
+		$itens = Video::model()->findAll();
 		$data = array('itens' => $itens);
 		$this->render('index', $data);
 	}

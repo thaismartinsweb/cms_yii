@@ -1,22 +1,29 @@
 <?php
 
 /**
- * This is the model class for table "video_gallery".
+ * This is the model class for table "video".
  *
- * The followings are the available columns in table 'video_gallery':
+ * The followings are the available columns in table 'video':
  * @property integer $id
+ * @property integer $video_gallery_id
+ * @property integer $type_video_id
  * @property string $title
+ * @property string $description
+ * @property string $url
  * @property string $date_create
- * @property integer $exibition
+ *
+ * The followings are the available model relations:
+ * @property VideoGallery $videoGallery
+ * @property TypeVideo $typeVideo
  */
-class VideoGallery extends CActiveRecord
+class Video extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'video_gallery';
+		return 'video';
 	}
 
 	/**
@@ -27,12 +34,14 @@ class VideoGallery extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, date_create', 'required'),
-			array('exibition', 'numerical', 'integerOnly'=>true),
+			array('type_video_id, title, date_create', 'required'),
+			array('video_gallery_id, type_video_id', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>100),
+			array('url', 'length', 'max'=>200),
+			array('description', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, date_create, exibition', 'safe', 'on'=>'search'),
+			array('id, video_gallery_id, type_video_id, title, description, url, date_create', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -44,6 +53,8 @@ class VideoGallery extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'videoGallery' => array(self::BELONGS_TO, 'VideoGallery', 'video_gallery_id'),
+			'typeVideo' => array(self::BELONGS_TO, 'TypeVideo', 'type_video_id'),
 		);
 	}
 
@@ -54,9 +65,12 @@ class VideoGallery extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
+			'video_gallery_id' => 'Video Gallery',
+			'type_video_id' => 'Type Video',
 			'title' => 'Title',
+			'description' => 'Description',
+			'url' => 'Url',
 			'date_create' => 'Date Create',
-			'exibition' => 'Exibition',
 		);
 	}
 
@@ -79,9 +93,12 @@ class VideoGallery extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
+		$criteria->compare('video_gallery_id',$this->video_gallery_id);
+		$criteria->compare('type_video_id',$this->type_video_id);
 		$criteria->compare('title',$this->title,true);
+		$criteria->compare('description',$this->description,true);
+		$criteria->compare('url',$this->url,true);
 		$criteria->compare('date_create',$this->date_create,true);
-		$criteria->compare('exibition',$this->exibition);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -92,21 +109,10 @@ class VideoGallery extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return VideoGallery the static model class
+	 * @return Video the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
-	}
-	
-	public function findTitle($id){
-	
-		$gallery = $this->findAllByPk($id);
-	
-		if($gallery){
-			return $gallery[0]->title;
-		}
-	
-		return '---';
 	}
 }
