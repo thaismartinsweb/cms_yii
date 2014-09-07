@@ -7,6 +7,9 @@ truncate table module;
 select * from type_menu;
 drop table type_menu;
 
+select * from type_page;
+drop table type_page;
+
 select * from config;
 drop table config;
 

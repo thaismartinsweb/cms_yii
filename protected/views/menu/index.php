@@ -17,6 +17,10 @@
 	<div class="col-lg-12">
 		<div class="panel panel-default">
 			<div class="panel-body">
+			
+				<?php echo CHtml::showErrorMessage(null); ?>
+				<?php echo CHtml::showSuccessMessage();?>
+				
 				<div class="table-responsive">
 					<table class="table table-striped">
 						<thead>

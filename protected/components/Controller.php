@@ -121,4 +121,19 @@ class Controller extends CController
 		return false;
 	}
 	
+	protected function deleteModel($model){
+		
+		if($model)
+		{
+			if($model->delete())
+			{
+				Yii::app()->user->setFlash('save','Conteúdo deletado com sucesso!');
+			}
+			else
+			{
+				Yii::app()->user->setFlash('error', $model);
+			}
+		}
+	}
+	
 }

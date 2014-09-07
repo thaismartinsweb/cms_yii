@@ -2636,7 +2636,7 @@ EOD;
 			$message .= '</ul></div>';
 			return $message;
 			
-		} else
+		} else if($model)
 		{
 			return CHtml::errorSummary( $model,
 					$message,

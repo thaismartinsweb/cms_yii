@@ -129,12 +129,24 @@ CREATE TABLE `cms`.`content` (
     FOREIGN KEY (`type_page_id`)
     REFERENCES `cms`.`type_page` (`id`)
     ON DELETE SET NULL
-    ON UPDATE SET NULL);
+    ON UPDATE SET NULL)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 
 
 
+
+CREATE TABLE `cms`.`video` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(100) NULL,
+  `type` VARCHAR(100) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 

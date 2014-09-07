@@ -47,4 +47,15 @@ class MenuController extends Controller
 		$this->render('index', $data);
 	}
 	
+	public function actionRemove($id = null)
+	{
+		if($id)
+		{
+			$model = $this->getCurrentModel($id);
+			$this->deleteModel($model);
+		}
+	
+		$this->redirect(array('admin/'.strtolower($this->model).'/index'));
+	}
+	
 }
