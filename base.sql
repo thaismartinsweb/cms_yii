@@ -177,3 +177,5 @@ CREATE TABLE `cms`.`content` (
     REFERENCES `cms`.`type_page` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
+
+select * from content;
