@@ -5,66 +5,38 @@ class ContentController extends Controller
 	public function beforeAction($action)
 	{
 		$this->layout = 'admin';
-		$this->breadcrumbs = array('Conteúdo');
+		$this->model  = 'Content';
+		$this->post   = isset($_POST['Content']) ? $_POST['Content'] : false;
+		$this->resolvePostAction($action);
 		return parent::beforeAction($action);
 	}
 
 	public function actionEdit($id = null)
 	{
-		
-		if(isset($_POST['Content']))
-		{
-			$model = $this->savePost($_POST['Content']);
-		}
-		else {
-			$model = $this->returnCurrentModel($id);
-		}
-		
-		$types = $this->getTypesPage();
-		$menus = $this->getMenus();
-		
-		$data = array('model' => $model, 'types' => $types, 'menus' => $menus);
-	
-		$this->render('edit', $data);
-	}
-	
-	private function savePost($post){
-		
-		if($post)
-		{
-			$model = $this->returnCurrentModel($post['id'], true);
-			$model->attributes = $post;
-			$image = CUploadedFile::getInstance($model, 'image');
+		if($id){
+			$this->breadcrumbs = array('Conteúdo' => array('admin/content'), 'Editar Conteúdo');
 			
-			if($image)
-			{
-				$model->image = $image;
-				$model->image->saveAs('/var/www/html/public/menu/' . $model->image->name);
-			}
+			$model = $this->getCurrentModel($id);		
+			$data = array(	'model' => $model,
+							'types' => $this->getTypesPage(),
+							'menus' => $this->getMenus());
 			
-			$model->save();
-			var_dump($model->save());
-			return $model;
+			$this->render('edit', $data);
+		} else {
+			$this->redirect('index');
 		}
 	}
 	
 	public function actionNew()
 	{
+		$this->breadcrumbs = array('Conteúdo' => array('admin/content'), 'Adicionar Conteúdo');
 		
-		if(isset($_POST['Menu']))
-		{
-			$model = $this->savePost($_POST['Menu']);
-			$this->redirect('edit/' . $model->id);
-		}
+		$model = $this->getCurrentModel();
+		$data = array(	'model' => $model,
+						'types' => $this->getTypesPage(),
+						'menus' => $this->getMenus());
 		
-		$model = $this->returnCurrentModel();
-		$types = $this->getTypesPage();
-		$menus = $this->getMenus();
-			
-		$data = array('model' => $model, 'types' => $types, 'menus' => $menus);
-			
-		$this->render('edit', $data);
-		
+		$this->render('edit', $data);		
 	}
 
 	public function actionIndex()
@@ -74,47 +46,4 @@ class ContentController extends Controller
 		$this->render('index', $data);
 	}
 	
-	private function returnCurrentModel($id = null, $save = false)
-	{
-		$item = false;
-	
-		if($id)
-		{
-			$item = Content::model()->findAllByPk($id);
-		}
-	
-		if($item){
-			return $item[0];
-		} else {
-				
-			if($save)
-			{
-				return new Content;
-			}
-				
-			return Content::model();
-		}
-	}
-	
-	private function getTypesPage(){
-		
-// 		$itens = TypePage::model()->findAll();
-		
-// 		if($itens){
-// 			return CHtml::listData($itens, 'id', 'title');
-// 		}
-		
-		return false;
-	}
-	
-	private function getMenus(){
-	
-		$itens = Menu::model()->findAll();
-	
-		if($itens){
-			return CHtml::listData($itens, 'id', 'title');
-		}
-	
-		return false;
-	}
 }

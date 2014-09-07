@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-sm-2" style="margin:15px 0;">
-		<a class="btn btn-primary" href="<?php echo Yii::app()->params['adminUrl']?>menu/new">
+		<a class="btn btn-primary" href="<?php echo Yii::app()->params['adminUrl']?><?php echo strtolower($this->model)?>/new">
 			<span class="fa fa-edit"></span>
 			Adicionar Novo
 		</a>
@@ -33,16 +33,16 @@
 									<tr>
 										<td><?php echo $item['id']?></td>
 										<td>
-											<a href="<?php echo Yii::app()->params['adminUrl']?>menu/edit/<?php echo $item['id']?>">
+											<a href="<?php echo Yii::app()->params['adminUrl']?><?php echo strtolower($this->model)?>/edit/<?php echo $item['id']?>">
 												<?php echo $item['title']?>
 											</a>
 										</td>
 										<td><?php echo Menu::model()->findTitle($item['master_id']);?></td>
 										<td>
-											<a href="<?php echo Yii::app()->params['adminUrl']?>menu/edit/<?php echo $item['id']?>" title="Editar" class="btn btn-primary btn-circle">
+											<a href="<?php echo Yii::app()->params['adminUrl']?><?php echo strtolower($this->model)?>/edit/<?php echo $item['id']?>" title="Editar" class="btn btn-primary btn-circle">
 												<i class="fa fa-edit"></i>
 											</a>
-											<a href="<?php echo Yii::app()->params['adminUrl']?>menu/remove/<?php echo $item['id']?>" title="Excluir" class="btn btn-danger btn-circle">
+											<a href="<?php echo Yii::app()->params['adminUrl']?><?php echo strtolower($this->model)?>/remove/<?php echo $item['id']?>" title="Excluir" class="btn btn-danger btn-circle">
 												<i class="fa fa-times"></i>
 											</a>
 										</td>

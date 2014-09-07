@@ -8,8 +8,11 @@
 	<div class="col-lg-12">
 		<div class="panel panel-default">
 			<div class="panel-body">
-				<?php echo CHtml::beginForm('/admin/config/update', 'post', array('enctype'=>'multipart/form-data')); ?>
-					<?php echo CHtml::errorSummary($model); ?>	
+				<?php echo CHtml::beginForm('', 'post', array('enctype'=>'multipart/form-data')); ?>
+				
+					<?php echo CHtml::activeHiddenField($model,'id') ?>
+					<?php echo CHtml::showErrorMessage($model); ?>
+					<?php echo CHtml::showSuccessMessage();?>
 				
 					<div class="form-group">
 						<?php echo CHtml::activeLabel($model,'title', array('label' => 'Título do Site')); ?>
@@ -20,7 +23,9 @@
 						<?php echo CHtml::activeLabel($model, 'image', array('label' => 'Logo do Site')); ?>
 						<?php echo CHtml::activeFileField($model, 'image'); ?>
 						<?php if(isset($model['image'])){ ?>
-							<img src="/public/config/<?php echo $model['image']?>" style="margin:10px;max-width:100px;max-height:100px;" title="Logo" alt="Logo" />
+							<a href="/public/<?php echo strtolower($this->model) ?>/<?php echo $model['image']?>" data-lightbox="<?php echo $model['image']?>">
+								<img src="/public/<?php echo strtolower($this->model) ?>/<?php echo $model['image']?>" style="margin:10px;max-width:100px;max-height:100px;" title="Logo" alt="Logo" />
+							</a>
 						<?php }?>
 					</div>
 					

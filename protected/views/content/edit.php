@@ -1,10 +1,4 @@
-<?php
-	$this->widget('application.extensions.tinymce.SladekTinyMce');
-	$this->breadcrumbs = array(
-		'Conteúdo' => array('admin/content'),
-		 $model->id ? 'Editar Conteúdo' : 'Adicionar Conteúdo',
-	);
-?>
+<?php $this->widget('application.extensions.tinymce.SladekTinyMce'); ?>
 <div class="row">
 	<div class="col-lg-12">
 		<h3 class="page-header"><?php echo $model->id ? 'Editar Conteúdo' : 'Adicionar Conteúdo'?></h3>
@@ -18,9 +12,9 @@
 				<?php echo CHtml::beginForm('', 'post', array('enctype'=>'multipart/form-data')); ?>
 					
 					<?php echo CHtml::activeHiddenField($model,'id') ?>
+					<?php echo CHtml::showErrorMessage($model); ?>
+					<?php echo CHtml::showSuccessMessage();?>
 					
-					<?php echo CHtml::errorSummary($model); ?>	
-				
 					<div class="form-group">
 						<?php echo CHtml::activeLabel($model,'title', array('label' => 'Título do Menu')); ?>
 						<?php echo CHtml::activeTextField($model,'title', array('class' => 'form-control field-xxlg', 'placeholder' => 'Título')) ?>
@@ -44,7 +38,9 @@
 						<?php echo CHtml::activeLabel($model, 'image', array('label' => 'Imagem do Conteúdo')); ?>
 						<?php echo CHtml::activeFileField($model, 'image'); ?>
 						<?php if(isset($model['image'])){ ?>
-							<img src="/public/content/<?php echo $model['image']?>" style="margin:10px;max-width:100px;max-height:100px;" title="Logo" alt="Logo" />
+							<a href="/public/<?php echo strtolower($this->model) ?>/<?php echo $model['image']?>" data-lightbox="<?php echo $model['image']?>">
+								<img src="/public/<?php echo strtolower($this->model) ?>/<?php echo $model['image']?>" style="margin:10px;max-width:100px;max-height:100px;" title="Logo" alt="Logo" />
+							</a>
 						<?php }?>
 					</div>
 					

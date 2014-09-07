@@ -4,8 +4,9 @@ class AdminController extends Controller
 {
 	protected function beforeAction($action){
 		$this->layout = 'admin';
+		$this->model  = 'Admin';
 		return parent::beforeAction($action);
-	}
+ 	}
 	
 	public function actionIndex()
 	{

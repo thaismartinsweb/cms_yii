@@ -1,12 +1,6 @@
-<?php
-$this->breadcrumbs = array(
-	'Menu'=>array('admin/menu'),
-	 $model->id ? 'Editar Conteúdo' : 'Adicionar Conteúdo',
-);
-?>
 <div class="row">
 	<div class="col-lg-12">
-		<h3 class="page-header"><?php echo $model->id ? 'Editar Conteúdo' : 'Adicionar Conteúdo'?></h3>
+		<h3 class="page-header"><?php echo isset($model->id) ? 'Editar Conteúdo' : 'Adicionar Conteúdo'?></h3>
 	</div>
 </div>
 
@@ -18,7 +12,8 @@ $this->breadcrumbs = array(
 					
 					<?php echo CHtml::activeHiddenField($model,'id') ?>
 					
-					<?php echo CHtml::errorSummary($model); ?>	
+					<?php echo CHtml::showErrorMessage($model); ?>
+					<?php echo CHtml::showSuccessMessage();?>
 				
 					<div class="form-group">
 						<?php echo CHtml::activeLabel($model,'title', array('label' => 'Título do Menu')); ?>
@@ -43,7 +38,9 @@ $this->breadcrumbs = array(
 						<?php echo CHtml::activeLabel($model, 'image', array('label' => 'Imagem do Menu')); ?>
 						<?php echo CHtml::activeFileField($model, 'image'); ?>
 						<?php if(isset($model['image'])){ ?>
-							<img src="/public/menu/<?php echo $model['image']?>" style="margin:10px;max-width:100px;max-height:100px;" title="Logo" alt="Logo" />
+							<a href="/public/<?php echo strtolower($this->model) ?>/<?php echo $model['image']?>" data-lightbox="<?php echo $model['image']?>">
+								<img src="/public/<?php echo strtolower($this->model) ?>/<?php echo $model['image']?>" style="margin:10px;max-width:100px;max-height:100px;" title="Logo" alt="Logo" />
+							</a>
 						<?php }?>
 					</div>
 					
@@ -60,7 +57,7 @@ $this->breadcrumbs = array(
 						<?php echo CHtml::activeLabel($model,'exibition', array('label' => 'Exibir menu na página inicial')); ?>
 					</div>
 			
-					<?php echo CHtml::submitButton($model->id ? 'Alterar' : 'Salvar', array('class' => 'btn btn-primary')); ?>
+					<?php echo CHtml::submitButton(isset($model->id) ? 'Alterar' : 'Salvar', array('class' => 'btn btn-primary')); ?>
 					
 				<?php echo CHtml::endForm(); ?>
 			</div>

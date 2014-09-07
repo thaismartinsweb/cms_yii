@@ -17,6 +17,8 @@
 	
 	<!-- Mint Admin CSS - Include with every page -->
 	<link href="<?php echo Yii::app()->request->baseUrl; ?>/css/mint-admin.css" rel="stylesheet" />
+	<link href="<?php echo Yii::app()->request->baseUrl; ?>/css/lightbox.css" rel="stylesheet" />
+	
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
@@ -97,6 +99,7 @@
 	</div>
 	
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.10.2.js"></script>
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/lightbox.min.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/plugins/metisMenu/jquery.metisMenu.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/plugins/morris/raphael-2.1.0.min.js"></script>
@@ -112,9 +115,9 @@
 		    plugins: [
 		         "autolink link image lists charmap hr anchor pagebreak",
 		         "searchreplace wordcount visualblocks visualchars nonbreaking",
-		         "table directionality template paste textcolor fullscreen"
+		         "table directionality template paste textcolor fullscreen jbimages"
 		   ],
-		   toolbar: "undo redo | bold italic | fontsizeselect forecolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image fullscreen",
+		   toolbar: "undo redo | bold italic | fontsizeselect forecolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link jbimages fullscreen",
 		   font_size_style_values: "10px, 12px, 14px, 16px, 18px, 20px, 24px, 28px, 36px",
 		   setup : function(ed) {
 				     ed.on('init', function() 
