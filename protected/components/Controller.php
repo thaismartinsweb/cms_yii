@@ -110,6 +110,17 @@ class Controller extends CController
 		return false;
 	}
 	
+	protected function getTypesVideo()
+	{
+		$itens = TypeVideo::model()->findAll();
+		
+		if($itens){
+			return CHtml::listData($itens, 'id', 'title');
+		}
+		
+		return false;
+	}
+	
 	protected function getMenus()
 	{
 		$itens = Menu::model()->findAll();

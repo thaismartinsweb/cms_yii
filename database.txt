@@ -36,30 +36,42 @@ PHOTO_GALLERY
  id
  title
  order
-
+ data_create
+ 
 PHOTO
  id
  photo_gallery_id
  title
  description
  image
+ data_create
+
+TYPE_VIDEO
+ id
+ title
+ type
 
 VIDEO_GALLERY
  id
  title
+ order
+ data_create
 
 VIDEO
  id
- id_video_gallery
+ video_gallery_id
+ type_video_id
  title
  description
  url
+ data_create
 
 PRODUCT_CATEGORY
  id
  title
  description
  image
+ data_create
 
 PRODUCT
  id
@@ -68,6 +80,7 @@ PRODUCT
  description
  content
  image
+ data_create
 
 CONFIG
  id
