@@ -58,7 +58,7 @@ class ContentController extends Controller
 		}
 		
 		$model = $this->returnCurrentModel();
-		$types = $this->getTypesMenu();
+		$types = $this->getTypesPage();
 		$menus = $this->getMenus();
 			
 		$data = array('model' => $model, 'types' => $types, 'menus' => $menus);
@@ -80,7 +80,7 @@ class ContentController extends Controller
 	
 		if($id)
 		{
-			$item = Menu::model()->findAllByPk($id);
+			$item = Content::model()->findAllByPk($id);
 		}
 	
 		if($item){
@@ -89,10 +89,10 @@ class ContentController extends Controller
 				
 			if($save)
 			{
-				return new Menu;
+				return new Content;
 			}
 				
-			return Menu::model();
+			return Content::model();
 		}
 	}
 	
