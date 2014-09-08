@@ -30,9 +30,10 @@ class VideoGallery extends CActiveRecord
 			array('title, date_create', 'required'),
 			array('exibition', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>100),
+			array('description', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, date_create, exibition', 'safe', 'on'=>'search'),
+			array('id, title, date_create, description, exibition', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,9 +55,10 @@ class VideoGallery extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'date_create' => 'Date Create',
-			'exibition' => 'Exibition',
+			'title' => 'Título',
+			'description' => 'Descrição',
+			'date_create' => 'Date de Criação',
+			'exibition' => 'Ordem de Exibição',
 		);
 	}
 
@@ -80,6 +82,7 @@ class VideoGallery extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
+		$criteria->compare('description',$this->description,true);
 		$criteria->compare('date_create',$this->date_create,true);
 		$criteria->compare('exibition',$this->exibition);
 

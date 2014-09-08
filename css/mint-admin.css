@@ -137,7 +137,7 @@ body {
       position: inherit;
       margin: 0 0 0 250px;
       padding: 0 30px;
-      min-height: 1300px;
+      min-height: 1000px;
       border-left: 1px solid #e7e7e7; } }
 
 #side-menu {
@@ -185,10 +185,14 @@ body {
       color: #fff;
       background: #0f1013; }
   #side-menu > li > a {
+    height: 55px; }
+  #side-menu > li > a > span {
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     font-size: 11px;
-    height: 90px; }
+    position: relative;
+    top:10px;
+    left:15px; }
     #side-menu > li > a.active:after, #side-menu > li > a.active:before {
       right: -1px;
       top: 50%;
@@ -215,7 +219,7 @@ body {
       -ms-transition: all 0.3s linear;
       transition: all 0.3s linear;
       display: block;
-      width: 100%;
+      float:left;
       margin: 7px 0;
       color: #5e657b; }
     #side-menu > li > a > .arrow {

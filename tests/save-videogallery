@@ -23,6 +23,11 @@
 </tr>
 <tr>
 	<td>type</td>
+	<td>id=VideoGallery_description</td>
+	<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus mi vel tempor pretium. Ut varius nibh augue, vitae scelerisque nulla cursus euismod. Morbi convallis eros ut neque rutrum, sed elementum dolor gravida. Integer nec nisl mattis, cursus dui pretium, fringilla felis. Suspendisse viverra metus ac urna imperdiet sodales. Suspendisse ut sapien non lectus efficitur auctor. Pellentesque sit amet aliquam diam, ut viverra lectus. Ut feugiat tempus erat, ut accumsan magna sodales vitae. Quisque semper sapien molestie mi interdum, vel malesuada magna dignissim. Sed varius nisl ut diam mattis scelerisque. Nam augue sem, posuere sed lacinia eget, placerat accumsan felis. </td>
+</tr>
+<tr>
+	<td>type</td>
 	<td>id=VideoGallery_exibition</td>
 	<td>1</td>
 </tr>

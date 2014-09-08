@@ -22,8 +22,9 @@ insert into module values
 (null, 'Videos', 'video', 'play-circle'),
 (null, 'Categoria de Produtos', 'productcategory', 'shopping-cart'),
 (null, 'Produtos', 'product', 'gift'),
-(null, 'Contatos', 'form', 'envelope-o'),
+(null, 'Contatos', 'contact', 'envelope-o'),
 (null, 'Ajuda', 'help', 'info-circle');
+
 
 
 CREATE TABLE `cms`.`config` (
@@ -156,12 +157,14 @@ INSERT INTO type_video VALUES
 CREATE TABLE `cms`.`video_gallery` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(100) NOT NULL,
+  `description` TEXT NULL,
   `exibition` INT NULL,
   `date_create` DATETIME NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_general_ci;
+
 
 CREATE TABLE `cms`.`video` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -189,6 +192,91 @@ DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_general_ci;
 
 
+
+CREATE TABLE `cms`.`product_category` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(100) NULL,
+  `description` TEXT NULL,
+  `image` VARCHAR(100) NULL,
+  `exibition` INT NULL,
+  `date_create` DATETIME NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+
+CREATE TABLE `cms`.`product` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `product_category_id` INT NULL,
+  `title` VARCHAR(100) NOT NULL,
+  `description` TEXT NULL,
+  `content` TEXT NULL,
+  `image` VARCHAR(100) NULL,
+  `date_create` DATETIME NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_product_category_idx` (`product_category_id` ASC),
+  CONSTRAINT `fk_product_category`
+    FOREIGN KEY (`product_category_id`)
+    REFERENCES `cms`.`product_category` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+
+CREATE TABLE `cms`.`contact` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) NOT NULL,
+  `company` VARCHAR(100) NULL,
+  `departament` VARCHAR(100) NULL,
+  `contact` VARCHAR(100) NOT NULL,
+  `email` VARCHAR(100) NOT NULL,
+  `subject` VARCHAR(200) NULL,
+  `content` TEXT NOT NULL,
+  `date_create` DATETIME NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+INSERT INTO contact VALUES
+(null, 'Thais Martins', 'Teste Company', 'Teste Deparment', '11 2222-2222', 'thaismartinsweb@gmail.com', 'Teste de Assunto', 'Conteúdo do Email', now()),
+(null, 'Thais Martins', 'Teste Company', '', '11 2222-2222', 'thaismartinsweb@gmail.com', 'Teste de Assunto', 'Conteúdo do Email', now()),
+(null, 'Thais Martins', '', 'Teste Deparment', '11 2222-2222', 'thaismartinsweb@gmail.com', 'Teste de Assunto', 'Conteúdo do Email', now()),
+(null, 'Thais Martins', 'Teste Company', 'Teste Deparment', '11 2222-2222', 'thaismartinsweb@gmail.com', '', 'Conteúdo do Email', now());
+
+
+CREATE TABLE `cms`.`photo_gallery` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(100) NOT NULL,
+  `image` VARCHAR(100) NULL,
+  `description` TEXT NULL,
+  `exibition` INT NULL,
+  `date_create` DATETIME NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+
+CREATE TABLE `cms`.`photo` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `photo_gallery_id` INT NOT NULL,
+  `title` VARCHAR(100) NULL,
+  `description` TEXT NULL,
+  `image` VARCHAR(45) NULL,
+  `date_create` DATETIME NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+
+
+drop table photo;
+select * from photo;
 
 insert into module_action values
 (null, 3, 'Gerenciar Todos','index', 'pencil-square-o'),

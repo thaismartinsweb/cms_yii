@@ -80,5 +80,6 @@ return array(
 		'adminEmail'=> 'thaismartinsweb@gmail.com',
 		'pageName'=> 'CMS',
 		'adminUrl'=>  'http://localhost/admin/',
+		'url'=>  'http://localhost/',
 	),
 );

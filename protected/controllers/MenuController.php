@@ -14,7 +14,7 @@ class MenuController extends Controller
 	public function actionEdit($id = null)
 	{
 		if($id){
-			$this->breadcrumbs = array('Menu' => array('admin/menu'), 'Editar Conteúdo');
+			$this->breadcrumbs = array('Menu' => array('admin/'.strtolower($this->model)), 'Editar Conteúdo');
 			
 			$model = $this->getCurrentModel($id);
 			$data = array(	'model' => $model,
@@ -29,7 +29,7 @@ class MenuController extends Controller
 
 	public function actionNew()
 	{
-		$this->breadcrumbs = array('Menu' => array('admin/menu'), 'Adicionar Conteúdo');
+		$this->breadcrumbs = array('Menu' => array('admin/'.strtolower($this->model)), 'Adicionar Conteúdo');
 		
 		$model = $this->getCurrentModel();
 		$data = array(	'model' => $model,
@@ -42,7 +42,7 @@ class MenuController extends Controller
 	public function actionIndex()
 	{
 		$this->breadcrumbs = array('Menu');
-		$itens = Menu::model()->findAll();
+		$itens = Menu::model()->findAll(array('order'=>'exibition'));
 		$data = array('itens' => $itens);
 		$this->render('index', $data);
 	}

@@ -31,6 +31,7 @@
 								<th>Id</th>
 								<th>Título</th>
 								<th>Menu</th>
+								<th>Tipo de Página</th>
 								<th>Ações</th>
 							</tr>
 						</thead>
@@ -41,10 +42,11 @@
 										<td><?php echo $content['id']?></td>
 										<td>
 											<a href="<?php echo Yii::app()->params['adminUrl']?>content/edit/<?php echo $content['id']?>">
-												<?php echo $item['title']?>
+												<?php echo $content['title']?>
 											</a>
 										</td>
 										<td><?php echo Menu::model()->findTitle($content['menu_id']);?></td>
+										<td><?php echo TypePage::model()->findTitle($content['type_page_id']);?></td>
 										<td>
 											<a href="<?php echo Yii::app()->params['adminUrl']?>content/edit/<?php echo $content['id']?>" title="Editar" class="btn btn-primary btn-circle">
 												<i class="fa fa-edit"></i>

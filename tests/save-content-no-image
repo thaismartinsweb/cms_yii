@@ -24,7 +24,7 @@
 <tr>
 	<td>select</td>
 	<td>id=Content_menu_id</td>
-	<td>label=[UPDATE IMAGE] Teste de Título 3</td>
+	<td>label=[UPDATE] Teste de Título</td>
 </tr>
 <tr>
 	<td>type</td>

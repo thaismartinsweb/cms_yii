@@ -65,12 +65,12 @@ class Video extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'video_gallery_id' => 'Video Gallery',
-			'type_video_id' => 'Type Video',
-			'title' => 'Title',
-			'description' => 'Description',
+			'video_gallery_id' => 'Galeria de Videos',
+			'type_video_id' => 'Tipo de Video',
+			'title' => 'Título',
+			'description' => 'Descrição',
 			'url' => 'Url',
-			'date_create' => 'Date Create',
+			'date_create' => 'Data de Criação',
 		);
 	}
 

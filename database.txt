@@ -35,6 +35,8 @@ CONTENT
 PHOTO_GALLERY
  id
  title
+ description
+ image
  exibition
  data_create
  
@@ -71,11 +73,12 @@ PRODUCT_CATEGORY
  title
  description
  image
+ exibition
  data_create
 
 PRODUCT
  id
- id_product_category
+ product_category_id
  title
  description
  content
@@ -126,3 +129,13 @@ MODULE_ACTION
  module_id
  method
  icon
+ 
+CONTACT
+  id
+  name
+  company
+  departament
+  contact
+  email
+  subject
+  content

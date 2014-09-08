@@ -38,7 +38,7 @@ class VideogalleryController extends Controller
 	public function actionIndex()
 	{
 		$this->breadcrumbs = array('Galeria de Videos');
-		$itens = VideoGallery::model()->findAll();
+		$itens = VideoGallery::model()->findAll(array('order'=>'exibition'));
 		$data = array('itens' => $itens);
 		$this->render('index', $data);
 	}

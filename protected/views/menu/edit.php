@@ -50,11 +50,13 @@
 					</div>
 					
 					<div class="form-group">
+						<?php echo CHtml::activeLabel($model,'exibition', array('label' => 'Ordem de Exibição')); ?>
+						<?php echo CHtml::activeTextField($model,'exibition', array('class' => 'form-control field-sm', 'placeholder' => '1')) ?>
+					</div>
+
+					<div class="form-group">
 						<?php echo CHtml::activeCheckBox($model,'special') ?>
-						<?php echo CHtml::activeLabel($model,'special', array('label' => 'Exibir menu')); ?>
-						<br />
-						<?php echo CHtml::activeCheckBox($model,'exibition') ?>
-						<?php echo CHtml::activeLabel($model,'exibition', array('label' => 'Exibir menu na página inicial')); ?>
+						<?php echo CHtml::activeLabel($model,'special', array('label' => 'Exibir menu na Página Inicial')); ?>
 					</div>
 			
 					<?php echo CHtml::submitButton(isset($model->id) ? 'Alterar' : 'Salvar', array('class' => 'btn btn-primary')); ?>

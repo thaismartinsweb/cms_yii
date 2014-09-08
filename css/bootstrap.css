@@ -1578,6 +1578,29 @@ textarea.form-control {
 
 .form-group {
   margin: 20px 0;}
+ 
+.form-group .photos {
+  max-width: 150px;
+  float:left;
+  margin: 10px;
+  position: relative;}
+  
+.form-group .photos > img {
+  max-width: 150px;
+  position: relative;}
+  
+.form-group .photos > p {
+  width: 150px;
+  background:#1abc9c;
+  position: absolute;
+  margin-top:-70px;
+  text-align:center;
+  font-weight:bold;
+  color:white;}
+  
+.form-group .photos > a {
+  margin: 20px;}
+
 
 .radio,
 .checkbox {

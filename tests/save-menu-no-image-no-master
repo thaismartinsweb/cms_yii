@@ -34,7 +34,7 @@
 <tr>
 	<td>click</td>
 	<td>id=Menu_exibition</td>
-	<td></td>
+	<td>2</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>

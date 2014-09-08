@@ -21,7 +21,12 @@
 					</div>
 					
 					<div class="form-group">
-						<?php echo CHtml::activeLabel($model,'exibition', array('label' => 'Descrição da Galeria')); ?>
+						<?php echo CHtml::activeLabel($model,'description', array('label' => 'Descrição da Galeria')); ?>
+						<?php echo CHtml::activeTextArea($model,'description', array('class' => 'form-control field-xxlg', 'placeholder' => 'Breve descrição sobre esta galeria')) ?>
+					</div>
+					
+					<div class="form-group">
+						<?php echo CHtml::activeLabel($model,'exibition', array('label' => 'Ordem de Exibição')); ?>
 						<?php echo CHtml::activeTextField($model,'exibition', array('class' => 'form-control field-sm', 'placeholder' => '1')) ?>
 					</div>
 			

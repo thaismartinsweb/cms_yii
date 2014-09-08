@@ -77,6 +77,28 @@ class Controller extends CController
 			$model->attributes = $this->post;
 
 			$image = CUploadedFile::getInstance($model, 'image');
+			$photos = CUploadedFile::getInstances($model, 'photos');
+
+			if($photos)
+			{
+				foreach($photos as $photo)
+				{
+					$dir = '/var/www/html/public/' . strtolower($this->model) . '/' . $model->id . '/';
+					
+					if(!is_dir($dir)){
+						mkdir($dir, 0777, true);
+					}
+					
+					if($photo->saveAs( $dir . $photo->name))
+					{
+						$item = new Photo;
+						$item->photo_gallery_id = $model->id;
+						$item->image = $photo->name;
+						$item->date_create = date('Y-m-d H:i:s');
+						$item->save();
+					}
+				}
+			}
 			
 			if($image)
 			{
@@ -132,6 +154,16 @@ class Controller extends CController
 		return false;
 	}
 	
+	protected function getCategoriesProduct()
+	{
+		$itens = ProductCategory::model()->findAll();
+	
+		if($itens){
+			return CHtml::listData($itens, 'id', 'title');
+		}
+	
+		return false;
+	}
 	
 	protected function getMenus()
 	{
@@ -143,6 +175,26 @@ class Controller extends CController
 	
 		return false;
 	}
+	
+	protected function getPhotosByGallery($id)
+	{
+		$itens = Photo::model()->findAllByAttributes(array('photo_gallery_id' => $id));
+	
+		if($itens){
+
+			if(is_array($itens)){
+				return $itens;
+			} else {
+				$collections = new CMap();
+				$collections->add(0, $itens);
+				return $collections->toArray();
+			}
+		}
+	
+		return false;
+	}
+	
+	
 	
 	protected function deleteModel($model){
 		

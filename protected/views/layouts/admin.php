@@ -28,7 +28,6 @@
 			<!-- LOGO -->
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html">
-					<img class="brand-logo" src="<?php echo Yii::app()->request->baseUrl; ?>/images/logo.png" alt="" />
 					<?php echo CHtml::encode(Yii::app()->params['pageName']); ?>
 				</a>
 			</div>
@@ -37,8 +36,13 @@
 			<!-- / LOGOUT -->
 			<ul class="nav navbar-top-links navbar-right">
 				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-						<i class="fa fa-sign-out  fa-2x fa-fw"></i>
+					<a target="_blank" href="<?php echo Yii::app()->params['url']?>" title="Visualizar Site">
+						<i class="fa fa-search-plus fa-2x fa-fw"></i>
+					</a>
+				</li>
+				<li class="dropdown">
+					<a href="<?php echo Yii::app()->params['adminUrl']?>logout" title="Sair">
+						<i class="fa fa-sign-out fa-2x fa-fw"></i>
 					</a>
 				</li>
 			</ul>

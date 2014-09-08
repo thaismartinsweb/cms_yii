@@ -14,7 +14,7 @@ class ContentController extends Controller
 	public function actionEdit($id = null)
 	{
 		if($id){
-			$this->breadcrumbs = array('Conteúdo' => array('admin/content'), 'Editar Conteúdo');
+			$this->breadcrumbs = array('Conteúdo' => array('admin/'.strtolower($this->model)), 'Editar Conteúdo');
 			
 			$model = $this->getCurrentModel($id);		
 			$data = array(	'model' => $model,
@@ -29,7 +29,7 @@ class ContentController extends Controller
 	
 	public function actionNew()
 	{
-		$this->breadcrumbs = array('Conteúdo' => array('admin/content'), 'Adicionar Conteúdo');
+		$this->breadcrumbs = array('Conteúdo' => array('admin/'.strtolower($this->model)), 'Adicionar Conteúdo');
 		
 		$model = $this->getCurrentModel();
 		$data = array(	'model' => $model,
@@ -41,7 +41,8 @@ class ContentController extends Controller
 
 	public function actionIndex()
 	{
-		$itens = Content::model()->findAll();
+		$this->breadcrumbs = array('Conteúdo');
+		$itens = Content::model()->findAll(array('order'=>'date_create DESC'));
 		$data = array('itens' => $itens);
 		$this->render('index', $data);
 	}
@@ -50,6 +51,7 @@ class ContentController extends Controller
 	{
 		if($id)
 		{
+			$this->breadcrumbs = array('Conteúdo');
 			$model = $this->getCurrentModel($id);
 			$this->deleteModel($model);	
 		}
