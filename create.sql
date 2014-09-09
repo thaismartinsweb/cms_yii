@@ -16,8 +16,7 @@ insert into module values
 (null, 'Dados do Site', 'config', 'cogs'),
 (null, 'Menu', 'menu', 'tasks'),
 (null, 'Conteúdo', 'content', 'quote-left'),
-(null, 'Galeria de Fotos', 'photogallery', 'camera-retro'),
-(null, 'Fotos', 'photo', 'picture-o'),
+(null, 'Fotos', 'photogallery', 'camera-retro'),
 (null, 'Galeria de Videos', 'videogallery', 'film'),
 (null, 'Videos', 'video', 'play-circle'),
 (null, 'Categoria de Produtos', 'productcategory', 'shopping-cart'),
@@ -25,7 +24,7 @@ insert into module values
 (null, 'Contatos', 'contact', 'envelope-o'),
 (null, 'Ajuda', 'help', 'info-circle');
 
-
+drop table module;
 
 CREATE TABLE `cms`.`config` (
   `id` INT NOT NULL AUTO_INCREMENT,
