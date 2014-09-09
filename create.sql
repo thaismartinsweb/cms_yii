@@ -267,10 +267,35 @@ CREATE TABLE `cms`.`photo` (
   `description` TEXT NULL,
   `image` VARCHAR(45) NULL,
   `date_create` DATETIME NOT NULL,
-  PRIMARY KEY (`id`))
+  PRIMARY KEY (`id`),
+	INDEX `fk_photo_gallery_idx` (`photo_gallery_id` ASC),
+  CONSTRAINT `fk_photo_gallery`
+    FOREIGN KEY (`photo_gallery_id`)
+    REFERENCES `cms`.`photo_gallery` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_general_ci;
+
+
+CREATE TABLE `cms`.`help` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `module_id` INT NULL,
+  `title` VARCHAR(200) NULL,
+  `content` TEXT NULL,
+  `exibition` INT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_module_idx` (`module_id` ASC),
+  CONSTRAINT `fk_module`
+    FOREIGN KEY (`module_id`)
+    REFERENCES `cms`.`module` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
 
 
 
