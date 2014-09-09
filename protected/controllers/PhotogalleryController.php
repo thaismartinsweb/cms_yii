@@ -15,13 +15,13 @@ class PhotogalleryController extends Controller
 	{
 		if($id){
 			$this->breadcrumbs = array('Galeria de Fotos' => array('admin/'.strtolower($this->model)), 'Editar Conteúdo');
+
+			$data = array('model' => $this->getCurrentModel($id),
+					      'photos' => $this->getPhotosByGallery($id) );
 			
-			$model = $this->getCurrentModel($id);
-			$data = array('model' => $model,
-						  'photos' => $this->getPhotosByGallery($id),
-						  'modelPhoto' => new Photo );
-			
+			$data['view_photos'] = $this->renderPartial('photos', $data, true);
 			$this->render('edit', $data);
+			
 		} else {
 			$this->redirect('index');
 		}
@@ -32,8 +32,14 @@ class PhotogalleryController extends Controller
 		if($id){
 			$this->model = 'Photo';
 			$this->post = isset($_POST['Photo']) ? $_POST['Photo'] : false;
-			$this->setPost();
-			$model = $this->getCurrentModel($id);
+			$model = $this->setPost();
+
+			if($model->save()) {
+				Yii::app()->user->setFlash('save','Conteúdo salvo com sucesso!');
+				$this->redirect('/admin/photogallery/edit/' . $model->photo_gallery_id);
+			} else {
+				Yii::app()->user->setFlash('error', $model);
+			}
 		} else {
 			$this->redirect('index');
 		}

@@ -77,18 +77,38 @@ class Controller extends CController
 			$model->attributes = $this->post;
 
 			$image = CUploadedFile::getInstance($model, 'image');
-			$photos = CUploadedFile::getInstances($model, 'photos');
+			
+			if($this->model == 'PhotoGallery')
+			{
+				$this->setPostPhotos($model);
+			}
+			
+			if($image)
+			{
+				$model->image = $image;
+				$model->image->saveAs('/var/www/html/public/' . strtolower($this->model) . '/' . $model->image->name);
+			}
 
+			return $model;
+		}
+	}
+	
+	protected function setPostPhotos($model)
+	{
+		if($model)
+		{
+			$photos = CUploadedFile::getInstances($model, 'photos');
+			
 			if($photos)
 			{
 				foreach($photos as $photo)
 				{
 					$dir = '/var/www/html/public/' . strtolower($this->model) . '/' . $model->id . '/';
-					
+						
 					if(!is_dir($dir)){
 						mkdir($dir, 0777, true);
 					}
-					
+						
 					if($photo->saveAs( $dir . $photo->name))
 					{
 						$item = new Photo;
@@ -99,14 +119,6 @@ class Controller extends CController
 					}
 				}
 			}
-			
-			if($image)
-			{
-				$model->image = $image;
-				$model->image->saveAs('/var/www/html/public/' . strtolower($this->model) . '/' . $model->image->name);
-			}
-
-			return $model;
 		}
 	}
 	

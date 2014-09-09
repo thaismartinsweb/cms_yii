@@ -98,6 +98,7 @@
 	
 			<?php echo $content; ?>
 			
+			<div style="clear:both"></div>
 			<div id="footer" style="text-align:center">2014 - <?php echo date('Y'); ?> | by <a href="#">Thais Martins</a></div>
 		</div>
 	</div>

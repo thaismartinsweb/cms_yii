@@ -1582,25 +1582,23 @@ textarea.form-control {
 .form-group .photos {
   max-width: 150px;
   float:left;
-  margin: 10px;
+  margin: 20px;
   position: relative;}
-  
-.form-group .photos > img {
+ 
+.form-group .photos > a > img {
   max-width: 150px;
   position: relative;}
   
 .form-group .photos > p {
   width: 150px;
-  background:#1abc9c;
-  position: absolute;
-  margin-top:-70px;
-  text-align:center;
-  font-weight:bold;
-  color:white;}
+  margin-bottom: 5px;
+  border-bottom:1px solid gray;
+  padding: 5px 0 2px 0}
   
-.form-group .photos > a {
-  margin: 20px;}
-
+.form-group .photos > a, .form-group .photos > button {
+  width: 150px;
+  padding: 5px 0;
+  margin-top:5px;}
 
 .radio,
 .checkbox {

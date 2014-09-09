@@ -13,6 +13,16 @@
 <tr><td><a href="save-menu-no-image-no-master">save-menu-no-image-no-master</a></td></tr>
 <tr><td><a href="update-menu-no-image">update-menu-no-image</a></td></tr>
 <tr><td><a href="update-menu-image">update-menu-image</a></td></tr>
+<tr><td><a href="save-content-no-image">save-content-no-image</a></td></tr>
+<tr><td><a href="save-videogallery">save-videogallery</a></td></tr>
+<tr><td><a href="update-videogallery">update-videogallery</a></td></tr>
+<tr><td><a href="save-video">save-video</a></td></tr>
+<tr><td><a href="update-video">update-video</a></td></tr>
+<tr><td><a href="save-categoryproduct-no-image">save-categoryproduct-no-image</a></td></tr>
+<tr><td><a href="save-categoryproduct-image">save-categoryproduct-image</a></td></tr>
+<tr><td><a href="update-categoryproduct-image">update-categoryproduct-image</a></td></tr>
+<tr><td><a href="save-product">save-product</a></td></tr>
+<tr><td><a href="save-photogallery">save-photogallery</a></td></tr>
 </tbody></table>
 </body>
 </html>
