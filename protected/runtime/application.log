@@ -3485,3 +3485,537 @@ Stack trace:
 REQUEST_URI=/admin/index.html
 HTTP_REFERER=https://localhost/admin/
 ---
+2014/09/09 21:18:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:19:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:19:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:19:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:19:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:20:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:20:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:20:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:20:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:20:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:20:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:20:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:20:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:20:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:20:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:20:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:21:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:21:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:21:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:21:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:21:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:21:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:21:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:22:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:22:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:22:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:22:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:22:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:22:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:22:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:22:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:22:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:22:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/09 21:22:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/10 13:31:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "menu/fresh".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('menu/fresh')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/menu/fresh
+---
+2014/09/10 13:31:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "favicon.ico".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/09/10 13:31:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/10 13:31:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "favicon.ico".' in /root/workspace/admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /root/workspace/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/09/10 13:33:35 [error] [exception.CException] exception 'CException' with message 'A propriedade "CDbCriteria.module_id" não está definida.' in /root/workspace/admin/framework/base/CComponent.php:173
+Stack trace:
+#0 /root/workspace/admin/framework/db/schema/CDbCriteria.php(160): CComponent->__set('module_id', '1')
+#1 /root/workspace/admin/framework/db/schema/CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 /root/workspace/admin/framework/db/ar/CActiveRecord.php(1469): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /root/workspace/admin/protected/modules/admin/controllers/HelpController.php(17): CActiveRecord->findAll(Array)
+#4 [internal function]: HelpController->actionView('1')
+#5 /root/workspace/admin/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(HelpController), Array)
+#6 /root/workspace/admin/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(HelpController), Object(ReflectionMethod), Array)
+#7 /root/workspace/admin/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /root/workspace/admin/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /root/workspace/admin/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /root/workspace/admin/framework/web/CWebApplication.php(282): CController->run('view')
+#11 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/help/view')
+#12 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /root/workspace/admin/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/admin/help/view/1
+---
+2014/09/10 13:34:21 [error] [exception.CException] exception 'CException' with message 'A propriedade "CDbCriteria.module_id" não está definida.' in /root/workspace/admin/framework/base/CComponent.php:173
+Stack trace:
+#0 /root/workspace/admin/framework/db/schema/CDbCriteria.php(160): CComponent->__set('module_id', '1')
+#1 /root/workspace/admin/framework/db/schema/CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 /root/workspace/admin/framework/db/ar/CActiveRecord.php(1469): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /root/workspace/admin/protected/modules/admin/controllers/HelpController.php(17): CActiveRecord->findAll(Array)
+#4 [internal function]: HelpController->actionView('1')
+#5 /root/workspace/admin/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(HelpController), Array)
+#6 /root/workspace/admin/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(HelpController), Object(ReflectionMethod), Array)
+#7 /root/workspace/admin/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /root/workspace/admin/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /root/workspace/admin/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /root/workspace/admin/framework/web/CWebApplication.php(282): CController->run('view')
+#11 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/help/view')
+#12 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /root/workspace/admin/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/admin/help/view/1
+---
+2014/09/10 13:34:22 [error] [exception.CException] exception 'CException' with message 'A propriedade "CDbCriteria.module_id" não está definida.' in /root/workspace/admin/framework/base/CComponent.php:173
+Stack trace:
+#0 /root/workspace/admin/framework/db/schema/CDbCriteria.php(160): CComponent->__set('module_id', '1')
+#1 /root/workspace/admin/framework/db/schema/CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 /root/workspace/admin/framework/db/ar/CActiveRecord.php(1469): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /root/workspace/admin/protected/modules/admin/controllers/HelpController.php(17): CActiveRecord->findAll(Array)
+#4 [internal function]: HelpController->actionView('1')
+#5 /root/workspace/admin/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(HelpController), Array)
+#6 /root/workspace/admin/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(HelpController), Object(ReflectionMethod), Array)
+#7 /root/workspace/admin/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /root/workspace/admin/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /root/workspace/admin/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /root/workspace/admin/framework/web/CWebApplication.php(282): CController->run('view')
+#11 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/help/view')
+#12 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /root/workspace/admin/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/admin/help/view/1
+---
+2014/09/10 13:34:22 [error] [exception.CException] exception 'CException' with message 'A propriedade "CDbCriteria.module_id" não está definida.' in /root/workspace/admin/framework/base/CComponent.php:173
+Stack trace:
+#0 /root/workspace/admin/framework/db/schema/CDbCriteria.php(160): CComponent->__set('module_id', '1')
+#1 /root/workspace/admin/framework/db/schema/CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 /root/workspace/admin/framework/db/ar/CActiveRecord.php(1469): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /root/workspace/admin/protected/modules/admin/controllers/HelpController.php(17): CActiveRecord->findAll(Array)
+#4 [internal function]: HelpController->actionView('1')
+#5 /root/workspace/admin/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(HelpController), Array)
+#6 /root/workspace/admin/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(HelpController), Object(ReflectionMethod), Array)
+#7 /root/workspace/admin/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /root/workspace/admin/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /root/workspace/admin/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /root/workspace/admin/framework/web/CWebApplication.php(282): CController->run('view')
+#11 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/help/view')
+#12 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /root/workspace/admin/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/admin/help/view/1
+---
+2014/09/10 13:40:12 [error] [exception.CException] exception 'CException' with message 'A propriedade "Help.name" não está definida.' in /root/workspace/admin/framework/base/CComponent.php:130
+Stack trace:
+#0 /root/workspace/admin/framework/db/ar/CActiveRecord.php(145): CComponent->__get('name')
+#1 /root/workspace/admin/framework/base/CModel.php(596): CActiveRecord->__get('name')
+#2 /root/workspace/admin/protected/modules/admin/views/help/view.php(10): CModel->offsetGet('name')
+#3 /root/workspace/admin/framework/web/CBaseController.php(126): require('/root/workspace...')
+#4 /root/workspace/admin/framework/web/CBaseController.php(95): CBaseController->renderInternal('/root/workspace...', Array, true)
+#5 /root/workspace/admin/framework/web/CController.php(869): CBaseController->renderFile('/root/workspace...', Array, true)
+#6 /root/workspace/admin/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#7 /root/workspace/admin/protected/modules/admin/controllers/HelpController.php(20): CController->render('view', Array)
+#8 [internal function]: HelpController->actionView('3')
+#9 /root/workspace/admin/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(HelpController), Array)
+#10 /root/workspace/admin/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(HelpController), Object(ReflectionMethod), Array)
+#11 /root/workspace/admin/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /root/workspace/admin/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /root/workspace/admin/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /root/workspace/admin/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/help/view')
+#16 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /root/workspace/admin/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/admin/help/view/3
+---
+2014/09/10 13:41:40 [error] [exception.CException] exception 'CException' with message 'A propriedade "Module.name" não está definida.' in /root/workspace/admin/framework/base/CComponent.php:130
+Stack trace:
+#0 /root/workspace/admin/framework/db/ar/CActiveRecord.php(145): CComponent->__get('name')
+#1 /root/workspace/admin/framework/base/CModel.php(596): CActiveRecord->__get('name')
+#2 /root/workspace/admin/protected/modules/admin/views/help/view.php(10): CModel->offsetGet('name')
+#3 /root/workspace/admin/framework/web/CBaseController.php(126): require('/root/workspace...')
+#4 /root/workspace/admin/framework/web/CBaseController.php(95): CBaseController->renderInternal('/root/workspace...', Array, true)
+#5 /root/workspace/admin/framework/web/CController.php(869): CBaseController->renderFile('/root/workspace...', Array, true)
+#6 /root/workspace/admin/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#7 /root/workspace/admin/protected/modules/admin/controllers/HelpController.php(21): CController->render('view', Array)
+#8 [internal function]: HelpController->actionView('3')
+#9 /root/workspace/admin/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(HelpController), Array)
+#10 /root/workspace/admin/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(HelpController), Object(ReflectionMethod), Array)
+#11 /root/workspace/admin/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /root/workspace/admin/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /root/workspace/admin/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /root/workspace/admin/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/help/view')
+#16 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /root/workspace/admin/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/admin/help/view/3
+---
+2014/09/10 13:41:48 [error] [exception.CException] exception 'CException' with message 'A propriedade "Help.date_create" não está definida.' in /root/workspace/admin/framework/base/CComponent.php:130
+Stack trace:
+#0 /root/workspace/admin/framework/db/ar/CActiveRecord.php(145): CComponent->__get('date_create')
+#1 /root/workspace/admin/framework/base/CModel.php(596): CActiveRecord->__get('date_create')
+#2 /root/workspace/admin/protected/modules/admin/views/help/view.php(15): CModel->offsetGet('date_create')
+#3 /root/workspace/admin/framework/web/CBaseController.php(126): require('/root/workspace...')
+#4 /root/workspace/admin/framework/web/CBaseController.php(95): CBaseController->renderInternal('/root/workspace...', Array, true)
+#5 /root/workspace/admin/framework/web/CController.php(869): CBaseController->renderFile('/root/workspace...', Array, true)
+#6 /root/workspace/admin/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#7 /root/workspace/admin/protected/modules/admin/controllers/HelpController.php(21): CController->render('view', Array)
+#8 [internal function]: HelpController->actionView('3')
+#9 /root/workspace/admin/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(HelpController), Array)
+#10 /root/workspace/admin/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(HelpController), Object(ReflectionMethod), Array)
+#11 /root/workspace/admin/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /root/workspace/admin/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /root/workspace/admin/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /root/workspace/admin/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/help/view')
+#16 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /root/workspace/admin/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/admin/help/view/3
+---
+2014/09/10 13:42:14 [error] [exception.CException] exception 'CException' with message 'A propriedade "Help.date_create" não está definida.' in /root/workspace/admin/framework/base/CComponent.php:130
+Stack trace:
+#0 /root/workspace/admin/framework/db/ar/CActiveRecord.php(145): CComponent->__get('date_create')
+#1 /root/workspace/admin/framework/base/CModel.php(596): CActiveRecord->__get('date_create')
+#2 /root/workspace/admin/protected/modules/admin/views/help/view.php(15): CModel->offsetGet('date_create')
+#3 /root/workspace/admin/framework/web/CBaseController.php(126): require('/root/workspace...')
+#4 /root/workspace/admin/framework/web/CBaseController.php(95): CBaseController->renderInternal('/root/workspace...', Array, true)
+#5 /root/workspace/admin/framework/web/CController.php(869): CBaseController->renderFile('/root/workspace...', Array, true)
+#6 /root/workspace/admin/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#7 /root/workspace/admin/protected/modules/admin/controllers/HelpController.php(21): CController->render('view', Array)
+#8 [internal function]: HelpController->actionView('3')
+#9 /root/workspace/admin/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(HelpController), Array)
+#10 /root/workspace/admin/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(HelpController), Object(ReflectionMethod), Array)
+#11 /root/workspace/admin/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /root/workspace/admin/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /root/workspace/admin/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /root/workspace/admin/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/help/view')
+#16 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /root/workspace/admin/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/admin/help/view/3
+---
+2014/09/10 13:47:33 [error] [php] Undefined variable: models (/root/workspace/admin/protected/modules/admin/views/help/view.php:13)
+Stack trace:
+#0 /root/workspace/admin/framework/web/CController.php(869): HelpController->renderFile()
+#1 /root/workspace/admin/framework/web/CController.php(782): HelpController->renderPartial()
+#2 /root/workspace/admin/protected/modules/admin/controllers/HelpController.php(21): HelpController->render()
+#3 unknown(0): HelpController->actionView()
+#4 /root/workspace/admin/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#5 /root/workspace/admin/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /root/workspace/admin/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /root/workspace/admin/framework/web/CController.php(286): HelpController->runAction()
+#8 /root/workspace/admin/framework/web/CController.php(265): HelpController->runActionWithFilters()
+#9 /root/workspace/admin/framework/web/CWebApplication.php(282): HelpController->run()
+#10 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /root/workspace/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/help/view/3
+in /root/workspace/admin/protected/modules/admin/views/help/view.php (13)
+in /root/workspace/admin/protected/modules/admin/controllers/HelpController.php (21)
+in /root/workspace/admin/index.php (13)
+2014/09/10 13:58:48 [error] [php] require(/root/workspace/admin/protectedhome): failed to open stream: No such file or directory (/root/workspace/admin/framework/web/CBaseController.php:130)
+Stack trace:
+#0 /root/workspace/admin/protected/modules/admin/views/help/view.php(23): HelpController->renderFile()
+#1 /root/workspace/admin/framework/web/CBaseController.php(126): require()
+#2 /root/workspace/admin/framework/web/CBaseController.php(95): HelpController->renderInternal()
+#3 /root/workspace/admin/framework/web/CController.php(869): HelpController->renderFile()
+#4 /root/workspace/admin/framework/web/CController.php(782): HelpController->renderPartial()
+#5 /root/workspace/admin/protected/modules/admin/controllers/HelpController.php(21): HelpController->render()
+#6 unknown(0): HelpController->actionView()
+#7 /root/workspace/admin/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#8 /root/workspace/admin/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#9 /root/workspace/admin/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /root/workspace/admin/framework/web/CController.php(286): HelpController->runAction()
+#11 /root/workspace/admin/framework/web/CController.php(265): HelpController->runActionWithFilters()
+#12 /root/workspace/admin/framework/web/CWebApplication.php(282): HelpController->run()
+#13 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /root/workspace/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/help/view/3
+in /root/workspace/admin/protected/modules/admin/views/help/view.php (23)
+in /root/workspace/admin/protected/modules/admin/controllers/HelpController.php (21)
+in /root/workspace/admin/index.php (13)
+2014/09/10 13:59:31 [error] [php] require(home): failed to open stream: No such file or directory (/root/workspace/admin/framework/web/CBaseController.php:130)
+Stack trace:
+#0 /root/workspace/admin/framework/web/CBaseController.php(126): require()
+#1 /root/workspace/admin/framework/web/CBaseController.php(95): HelpController->renderInternal()
+#2 /root/workspace/admin/framework/web/CController.php(869): HelpController->renderFile()
+#3 /root/workspace/admin/framework/web/CController.php(782): HelpController->renderPartial()
+#4 /root/workspace/admin/protected/modules/admin/controllers/HelpController.php(21): HelpController->render()
+#5 unknown(0): HelpController->actionView()
+#6 /root/workspace/admin/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#7 /root/workspace/admin/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#8 /root/workspace/admin/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /root/workspace/admin/framework/web/CController.php(286): HelpController->runAction()
+#10 /root/workspace/admin/framework/web/CController.php(265): HelpController->runActionWithFilters()
+#11 /root/workspace/admin/framework/web/CWebApplication.php(282): HelpController->run()
+#12 /root/workspace/admin/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /root/workspace/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /root/workspace/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/help/view/3
+in /root/workspace/admin/protected/modules/admin/views/help/view.php (23)
+in /root/workspace/admin/protected/modules/admin/controllers/HelpController.php (21)
+in /root/workspace/admin/index.php (13)

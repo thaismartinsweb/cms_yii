@@ -7,22 +7,26 @@
 <div class="row">
 	<div class="col-lg-12">
 		<div class="panel panel-default">
-			<div class="panel-heading" style="font-size:16px"><b><?php echo $model['name'] ?></b></div>
+			<div class="panel-heading" style="font-size:16px"><b><?php echo $module['title'] ?></b></div>
 			<div class="panel-body">
-				<div class="table-responsive">
-					<table class="table table-striped table-bordered table-hover">         
-						<tbody>
-							<tr><td><b>Data do Contato:</b> <?php echo date ('d/m/Y H:i', strtotime($model['date_create']))?></td></tr>
-							<tr><td><b>Empresa:</b> <?php echo $model['company']?></td></tr>
-							<tr><td><b>Departamento:</b> <?php echo $model['departament']?></td></tr>
-							<tr><td><b>Telefone:</b> <?php echo $model['contact']?></td></tr>
-							<tr><td><b>Email:</b> <?php echo $model['email']?></td></tr>
-							<tr><td><b>Assunto:</b> <?php echo $model['subject']?></td></tr>
-							<tr><td><b>Conteúdo:</b> <?php echo $model['content']?></td></tr>
-						</tbody>
-					</table>
-				</div>
+				<div id="accordion" class="panel-group">
 				
+					<?php if($models && is_array($models)) {?>
+						<?php foreach($models as $item){ ?>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="<?php echo '#'.$item['id']?>" data-parent="#accordion" data-toggle="collapse"><?php echo $item['title']?></a>
+									</h4>
+								</div>
+								<div id="<?php echo $item['id']?>" class="panel-collapse collapse">
+									<?php $this->renderPartial($item['content']);?>
+								</div>
+							</div>
+						<?php }?>
+					<?php }?>
+					
+				</div>				
 				<div class="form-group">
 					<a href="<?php echo Yii::app()->params['adminUrl']?><?php echo strtolower($this->model)?>" class="btn btn-primary">Voltar</a>
 				</div>

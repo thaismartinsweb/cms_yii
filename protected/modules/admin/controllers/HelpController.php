@@ -14,8 +14,9 @@ class HelpController extends Controller
 		if($id){
 			$this->breadcrumbs = array('Contato' => array('admin/'.strtolower($this->model)), 'Visualizar Conteúdo');
 			
-			$model = Help::model()->findAll(array('module_id' => $id));
-			$data = array('model' => $model);
+			$models = Help::model()->findAllByAttributes(array('module_id' => $id));
+			$data = array('models' => $models,
+						   'module' => Module::model()->findByPk($id));
 			
 			$this->render('view', $data);
 		} else {
