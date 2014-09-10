@@ -2,6 +2,7 @@
 
 class SiteController extends Controller
 {
+	
 	/**
 	 * Declares class-based actions.
 	 */
@@ -81,6 +82,7 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
+		die('entrou');
 		$model=new LoginForm;
 
 		// if it is ajax validation request

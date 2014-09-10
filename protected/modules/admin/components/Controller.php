@@ -224,7 +224,12 @@ class Controller extends CController
 	}
 	
 	public function redirect($url){
-		parent::redirect('/admin/'.strtolower($this->model).'/'.$url);
+		
+		if(strpos($url, 'admin') === false){
+			$url = '/admin/'.strtolower($this->model).'/'.$url;
+		}
+		
+		parent::redirect($url);
 	}
 	
 	

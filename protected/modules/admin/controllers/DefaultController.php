@@ -4,8 +4,13 @@ class DefaultController extends Controller
 {
 	protected function beforeAction($action){
 		$this->layout = 'admin';
-		$this->model  = 'Admin';
+		$this->model  = 'Default';
 		return parent::beforeAction($action);
+ 	}
+ 	
+ 	public function actionLogin(){
+ 		$this->layout = 'main';
+ 		$this->render('login');
  	}
 	
 	public function actionIndex()
@@ -25,12 +30,17 @@ class DefaultController extends Controller
 			if(Yii::app()->request->isAjaxRequest)
 				echo $error['message'];
 			else {
-				$this->layout='admin';
+				$this->layout = 'admin';
 				$this->render('error', $error);
 			}
 	
 		}
+	}
 	
+	public function actionLogout()
+	{
+		Yii::app()->user->logout(false);
+		$this->redirect(Yii::app()->getModule('admin')->user->loginUrl);
 	}
 	
 }

@@ -13,10 +13,14 @@ class AdminModule extends CWebModule
 			'admin.components.*',
 		));
 		
-		Yii::app()->setComponents(array(
+		$this->setComponents(array(
 										'errorHandler' => array(
 																'errorAction'=>'admin/default/error'
-																)
+																),
+										'user' => array(
+														'class' => 'CWebUser',
+														'loginUrl' => Yii::app()->createUrl('admin/default/login'),
+														),
 									));
 		
 		$this->layoutPath = Yii::getPathOfAlias('admin.views.layouts');
@@ -27,8 +31,17 @@ class AdminModule extends CWebModule
 	{
 		if(parent::beforeControllerAction($controller, $action))
 		{
-			// this method is called before any module controller action is performed
-			// you may place customized code here
+			$route = $controller->id . '/' . $action->id;
+			
+			$publicPages = array(
+					'default/login',
+					'default/error',
+			);
+			
+			if(Yii::app()->getModule('admin')->user->isGuest && !in_array($route, $publicPages))
+			{
+				Yii::app()->request->redirect(Yii::app()->getModule('admin')->user->loginUrl);
+			}
 			return true;
 		}
 		else
