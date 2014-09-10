@@ -45,12 +45,7 @@ class SiteController extends Controller
 			}
 			else
 			{
-				if(strpos(Yii::app()->request->getUrl(), 'admin') !== false){
-					$this->layout = 'admin';
-					$this->render('../admin/error', $error);
-				} else {
-					$this->render('error', $error);
-				}
+				$this->render('error', $error);
 			}
 		}
 	}

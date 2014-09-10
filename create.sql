@@ -24,7 +24,8 @@ insert into module values
 (null, 'Contatos', 'contact', 'envelope-o'),
 (null, 'Ajuda', 'help', 'info-circle');
 
-drop table module;
+
+
 
 CREATE TABLE `cms`.`config` (
   `id` INT NOT NULL AUTO_INCREMENT,
