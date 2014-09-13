@@ -52,6 +52,8 @@ return array(
 			'username' => 'root',
 			'password' => 'teste123',
 			'charset' => 'utf8',
+			'enableParamLogging'=>true,
+			'enableProfiling'=>true,
 		),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
@@ -65,11 +67,9 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
-				array(
+				/* array(
 					'class'=>'CWebLogRoute',
-				),
-				*/
+				), */
 			),
 		),
 	),
@@ -81,6 +81,7 @@ return array(
 		'adminEmail'=> 'thaismartinsweb@gmail.com',
 		'pageName'=> 'CMS',
 		'adminUrl'=>  'http://localhost/admin/',
+		'logoutUrl'=>  'http://localhost/admin/default/logout',
 		'url'=>  'http://localhost/',
 	),
 );

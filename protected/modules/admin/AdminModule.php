@@ -20,6 +20,7 @@ class AdminModule extends CWebModule
 										'user' => array(
 														'class' => 'CWebUser',
 														'loginUrl' => Yii::app()->createUrl('admin/default/login'),
+														'returnUrl' => Yii::app()->createUrl('admin/default/index'),
 														),
 									));
 		

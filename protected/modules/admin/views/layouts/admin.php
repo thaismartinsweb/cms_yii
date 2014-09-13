@@ -41,7 +41,7 @@
 					</a>
 				</li>
 				<li class="dropdown">
-					<a href="<?php echo Yii::app()->params['adminUrl']?>logout" title="Sair">
+					<a href="<?php echo Yii::app()->params['logoutUrl']?>" title="Sair">
 						<i class="fa fa-sign-out fa-2x fa-fw"></i>
 					</a>
 				</li>

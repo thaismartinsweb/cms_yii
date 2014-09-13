@@ -297,10 +297,20 @@ ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_general_ci;
 
+CREATE TABLE `cms`.`user` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) NULL,
+  `username` VARCHAR(100) NOT NULL,
+  `password` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+INSERT INTO `cms`.`user` VALUES (null, 'Administrador', 'admin', '24e7a730ff315b8bb4f013a282b98ebd');
 
 
-
-drop table photo;
+drop table user;
 select * from photo;
 
 insert into module_action values
