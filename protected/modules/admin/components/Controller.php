@@ -9,7 +9,7 @@ class Controller extends CController
 	 * @var string the default layout for the controller view. Defaults to '//layouts/column1',
 	 * meaning using a single column layout. See 'protected/views/layouts/column1.php'.
 	 */
-	public $layout = '//layouts/column1';
+	public $layout = 'admin';
 	
 	/**
 	 * @var array context menu items. This property will be assigned to {@link CMenu::items}.
@@ -23,9 +23,26 @@ class Controller extends CController
 	 */
 	public $breadcrumbs = array();
 	
+	public $modelName;
 	public $model;
 	public $post;
 	public $type;
+	
+	public function beforeAction($action)
+	{
+		$module = Module::model()->findByAttributes(array('controller' => $action->controller->id));
+
+		if($module)
+		{
+			$this->model = ucfirst($module->controller);
+			$this->modelName = $module->title;
+		}
+		
+		$this->resolvePostAction($action);
+		$this->breadcrumbs = $this->createBreadcrumbs($action->id);
+		
+		return parent::beforeAction($action);
+	}
 	
 	public function resolvePostAction($action)
 	{	
@@ -34,7 +51,7 @@ class Controller extends CController
 		if($this->post)
 		{
 			$model = $this->setPost();
-			
+					
 			if($model->save()) {
 				Yii::app()->user->setFlash('save','Conteúdo salvo com sucesso!');
 				if($this->model == 'Config'){
@@ -181,7 +198,8 @@ class Controller extends CController
 	{
 		$itens = Menu::model()->findAll();
 	
-		if($itens){
+		if($itens){			
+			
 			return CHtml::listData($itens, 'id', 'title');
 		}
 	
@@ -223,13 +241,35 @@ class Controller extends CController
 		}
 	}
 	
-	public function redirect($url){
-		
-		if(strpos($url, 'admin') === false){
-			$url = '/admin/'.strtolower($this->model).'/'.$url;
+	protected function createBreadcrumbs($page)
+	{
+		switch($page){
+			
+			case 'view':
+				return array(
+					$this->modelName => array($this->createUrl('index')),
+					'Visualizar Conteúdo'
+				);
+				break;
+			
+			case 'new':
+				return array(
+					$this->modelName => array($this->createUrl('index')),
+					'Adicionar Conteúdo'
+				);
+				break;
+			
+			case 'update':
+				return array(
+					$this->modelName => array($this->createUrl('index')),
+					'Atualizar Conteúdo'
+				);
+				break;
+			
+			case 'index':
+				return array($this->modelName);
+				break;
 		}
-		
-		parent::redirect($url);
 	}
 	
 	

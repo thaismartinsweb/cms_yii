@@ -8,8 +8,7 @@
 				</div>
 				
 				<div class="panel-body">
-				
-					<?php //echo Yii::app()->user->getFlash('notification');?>
+
 					<?php echo CHtml::beginForm('', 'post', array('role' => 'form')); ?>
 					
 					<?php if(CHtml::errorSummary($model)) { ?>
@@ -18,16 +17,15 @@
 							<?php echo CHtml::errorSummary($model); ?>
 						</div>
 					<?php } ?>
-					
-					
+
 					<div class="form-group">
-					    <?php echo CHtml::activeLabel($model,'Usuário', array('class' => 'xxxx')); ?>
-					    <?php echo CHtml::activeTextField($model,'username', array('class' => 'form-control', 'placeholder' => 'usuario')) ?>
+					    <?php echo CHtml::activeLabel($model, Yii::t('admin', 'Usuario')); ?>
+					    <?php echo CHtml::activeTextField($model,'username', array('class' => 'form-control input-lg', 'placeholder' => 'usuario')) ?>
 					</div>
 					
 					<div class="form-group">
-					    <?php echo CHtml::activeLabel($model,'Senha', array('class' => 'xxxx')); ?>
-					    <?php echo CHtml::activePasswordField($model,'password', array('class' => 'form-control', 'placeholder' => 'senha')) ?>
+					    <?php echo CHtml::activeLabel($model, Yii::t('admin', 'Senha')); ?>
+					    <?php echo CHtml::activePasswordField($model,'password', array('class' => 'form-control input-lg', 'placeholder' => 'senha')) ?>
 					</div>
 					
 					<div class="row submit">
@@ -37,7 +35,6 @@
 					<?php echo CHtml::endForm(); ?>
 					
 				</div>
-				
 			</div>
 		</div>
 	</div>

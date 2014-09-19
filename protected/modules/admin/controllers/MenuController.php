@@ -4,20 +4,14 @@ class MenuController extends Controller
 {
 	public function beforeAction($action)
 	{
-		$this->layout = 'admin';
-		$this->model  = 'Menu';
-		$this->post   = isset($_POST['Menu']) ? $_POST['Menu'] : false;
-		$this->resolvePostAction($action);
+		$this->post = isset($_POST['Menu']) ? $_POST['Menu'] : false;
 		return parent::beforeAction($action);
 	}
 
 	public function actionEdit($id = null)
 	{
 		if($id){
-			$this->breadcrumbs = array('Menu' => array('admin/'.strtolower($this->model)), 'Editar Conteúdo');
-			
-			$model = $this->getCurrentModel($id);
-			$data = array(	'model' => $model,
+			$data = array(	'model' => $this->getCurrentModel($id),
 							'types' => $this->getTypesMenu(),
 							'menus' => $this->getMenus());
 			
@@ -29,10 +23,8 @@ class MenuController extends Controller
 
 	public function actionNew()
 	{
-		$this->breadcrumbs = array('Menu' => array('admin/'.strtolower($this->model)), 'Adicionar Conteúdo');
-		
-		$model = $this->getCurrentModel();
-		$data = array(	'model' => $model,
+
+		$data = array(	'model' => $this->getCurrentModel(),
 						'types' => $this->getTypesMenu(),
 						'menus' => $this->getMenus());
 		
@@ -41,9 +33,7 @@ class MenuController extends Controller
 
 	public function actionIndex()
 	{
-		$this->breadcrumbs = array('Menu');
-		$itens = Menu::model()->findAll(array('order'=>'exibition'));
-		$data = array('itens' => $itens);
+		$data = array('itens' => Menu::model()->findAll(array('order'=>'exibition')));
 		$this->render('index', $data);
 	}
 	
@@ -55,7 +45,7 @@ class MenuController extends Controller
 			$this->deleteModel($model);
 		}
 	
-		$this->redirect(array('admin/'.strtolower($this->model).'/index'));
+		$this->redirect($this->createUrl('index'));
 	}
 	
 }

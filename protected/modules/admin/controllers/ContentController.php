@@ -4,20 +4,14 @@ class ContentController extends Controller
 {
 	public function beforeAction($action)
 	{
-		$this->layout = 'admin';
-		$this->model  = 'Content';
-		$this->post   = isset($_POST['Content']) ? $_POST['Content'] : false;
-		$this->resolvePostAction($action);
+		$this->post = isset($_POST['Content']) ? $_POST['Content'] : false;
 		return parent::beforeAction($action);
 	}
 
 	public function actionEdit($id = null)
 	{
 		if($id){
-			$this->breadcrumbs = array('Conteúdo' => array('admin/'.strtolower($this->model)), 'Editar Conteúdo');
-			
-			$model = $this->getCurrentModel($id);		
-			$data = array(	'model' => $model,
+			$data = array(	'model' => $this->getCurrentModel($id),
 							'types' => $this->getTypesPage(),
 							'menus' => $this->getMenus());
 			
@@ -29,10 +23,7 @@ class ContentController extends Controller
 	
 	public function actionNew()
 	{
-		$this->breadcrumbs = array('Conteúdo' => array('admin/'.strtolower($this->model)), 'Adicionar Conteúdo');
-		
-		$model = $this->getCurrentModel();
-		$data = array(	'model' => $model,
+		$data = array(	'model' => $this->getCurrentModel(),
 						'types' => $this->getTypesPage(),
 						'menus' => $this->getMenus());
 		
@@ -41,9 +32,7 @@ class ContentController extends Controller
 
 	public function actionIndex()
 	{
-		$this->breadcrumbs = array('Conteúdo');
-		$itens = Content::model()->findAll(array('order'=>'date_create DESC'));
-		$data = array('itens' => $itens);
+		$data = array('itens' => Content::model()->findAll(array('order'=>'date_create DESC')));
 		$this->render('index', $data);
 	}
 	
@@ -51,12 +40,11 @@ class ContentController extends Controller
 	{
 		if($id)
 		{
-			$this->breadcrumbs = array('Conteúdo');
 			$model = $this->getCurrentModel($id);
 			$this->deleteModel($model);	
 		}
 		
-		$this->redirect(array('admin/'.strtolower($this->model).'/index'));
+		$this->redirect($this->createUrl('index'));
 	}
 	
 }

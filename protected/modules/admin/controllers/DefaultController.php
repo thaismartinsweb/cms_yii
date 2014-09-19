@@ -1,13 +1,7 @@
 <?php
 
 class DefaultController extends Controller
-{
-	protected function beforeAction($action){
-		$this->layout = 'admin';
-		$this->model  = 'Default';
-		return parent::beforeAction($action);
- 	}
- 	
+{ 	
  	public function actionLogin(){
  		$this->layout = 'main';
  		$model = new User();
@@ -28,10 +22,8 @@ class DefaultController extends Controller
 	
 	public function actionIndex()
 	{
-		$modules = Module::model()->findAll();
-		$contents = Content::model()->findAll();
-		$data = array( 'modules' => $modules,
-					   'contents' => $contents);
+		$data = array( 'modules' => Module::model()->findAll(),
+					   'contents' => Content::model()->findAll());
 		
 		$this->render('index', $data);
 	}

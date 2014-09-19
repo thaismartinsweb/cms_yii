@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-sm-2" style="margin:15px 0;">
-		<a class="btn btn-primary" href="<?php echo Yii::app()->params['adminUrl']?><?php echo strtolower($this->model)?>/new">
+		<a class="btn btn-primary" href="<?php echo $this->createUrl('new');?>">
 			<span class="fa fa-edit"></span>
 			Adicionar Novo
 		</a>

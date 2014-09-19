@@ -2,32 +2,22 @@
 
 class ContactController extends Controller
 {
-	public function beforeAction($action)
-	{
-		$this->layout = 'admin';
-		$this->model  = 'Contact';
-		return parent::beforeAction($action);
-	}
-
 	public function actionView($id = null)
 	{
 		if($id){
-			$this->breadcrumbs = array('Contato' => array('admin/'.strtolower($this->model)), 'Visualizar Conteúdo');
-			
-			$model = $this->getCurrentModel($id);
-			$data = array(	'model' => $model,
+			$data = array(	'model' => $this->getCurrentModel($id),
 							'types' => $this->getTypesMenu(),
 							'menus' => $this->getMenus());
 			
 			$this->render('view', $data);
 		} else {
-			$this->redirect('index');
+			$this->redirect($this->createUrl('index'));
 		}
 	}
 
 	public function actionIndex()
 	{
-		$this->breadcrumbs = array('Menu');
+		$this->breadcrumbs = $this->createBreadcrumbs('index');
 		$itens = Contact::model()->findAll(array('order'=>'date_create DESC'));
 		$data = array('itens' => $itens);
 		$this->render('index', $data);
@@ -41,7 +31,7 @@ class ContactController extends Controller
 			$this->deleteModel($model);
 		}
 	
-		$this->redirect(array('admin/'.strtolower($this->model).'/index'));
+		$this->redirect($this->createUrl('index'));
 	}
 	
 }

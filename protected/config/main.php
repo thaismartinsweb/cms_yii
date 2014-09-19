@@ -7,8 +7,9 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'CMS | Gerenciador de Conteúdo',
+	'name'=>'SuperWay | Gerenciador de Conteúdo',
 	'language' => 'pt_br',
+	'sourceLanguage' => 'pt',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -47,13 +48,13 @@ return array(
 		),
 		// uncomment the following to use a MySQL database
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=cms',
+			'connectionString' => 'mysql:host=127.0.0.1;dbname=cms',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'teste123',
+			'password' => 'root',
 			'charset' => 'utf8',
-			'enableParamLogging'=>true,
-			'enableProfiling'=>true,
+			'enableParamLogging' => true,
+			'enableProfiling' => true,
 		),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
@@ -80,8 +81,6 @@ return array(
 		// this is used in contact page
 		'adminEmail'=> 'thaismartinsweb@gmail.com',
 		'pageName'=> 'CMS',
-		'adminUrl'=>  'http://localhost/admin/',
-		'logoutUrl'=>  'http://localhost/admin/default/logout',
-		'url'=>  'http://localhost/',
+		require 'environments.php',
 	),
 );

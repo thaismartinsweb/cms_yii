@@ -4,18 +4,13 @@ class PhotogalleryController extends Controller
 {
 	public function beforeAction($action)
 	{
-		$this->layout = 'admin';
-		$this->model  = 'PhotoGallery';
-		$this->post   = isset($_POST['PhotoGallery']) ? $_POST['PhotoGallery'] : false;
-		$this->resolvePostAction($action);
+		$this->post = isset($_POST['PhotoGallery']) ? $_POST['PhotoGallery'] : false;
 		return parent::beforeAction($action);
 	}
 
 	public function actionEdit($id = null)
 	{
 		if($id){
-			$this->breadcrumbs = array('Galeria de Fotos' => array('admin/'.strtolower($this->model)), 'Editar Conteúdo');
-
 			$data = array('model' => $this->getCurrentModel($id),
 					      'photos' => $this->getPhotosByGallery($id) );
 			
@@ -36,7 +31,7 @@ class PhotogalleryController extends Controller
 
 			if($model->save()) {
 				Yii::app()->user->setFlash('save','Conteúdo salvo com sucesso!');
-				$this->redirect('/admin/photogallery/edit/' . $model->photo_gallery_id);
+				$this->redirect($this->createUrl('edit' . $model->photo_gallery_id));
 			} else {
 				Yii::app()->user->setFlash('error', $model);
 			}
@@ -47,20 +42,12 @@ class PhotogalleryController extends Controller
 
 	public function actionNew()
 	{
-		$this->breadcrumbs = array('Galeria de Fotos' => array('admin/'.strtolower($this->model)), 'Adicionar Conteúdo');
-		
-		$model = $this->getCurrentModel();
-		$data = array('model' => $model);
-		
-		$this->render('edit', $data);		
+		$this->render('edit', array('model' => $this->getCurrentModel()));		
 	}
 
 	public function actionIndex()
 	{
-		$this->breadcrumbs = array('Galeria de Fotos');
-		$itens = PhotoGallery::model()->findAll(array('order'=>'exibition'));
-		$data = array('itens' => $itens);
-		$this->render('index', $data);
+		$this->render('index', array('itens' => Photogallery::model()->findAll(array('order'=>'exibition'))));
 	}
 	
 	public function actionRemove($id = null)
@@ -71,7 +58,7 @@ class PhotogalleryController extends Controller
 			$this->deleteModel($model);
 		}
 	
-		$this->redirect(array('admin/'.strtolower($this->model).'/index'));
+		$this->redirect($this->createUrl('index'));
 	}
 	
 }

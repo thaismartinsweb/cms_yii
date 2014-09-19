@@ -8,7 +8,7 @@
 					</div>
 					<div class="panel-footer">
 						<span class="panel-eyecandy-title">
-							<a href="<?php echo Yii::app()->params['adminUrl']?><?php echo $module['controller']?>"><?php echo $module['title']?></a>
+							<a href="<?php echo Yii::app()->createUrl('admin/'.$module['controller'])?>"><?php echo $module['title']?></a>
 						</span>
 					</div>
 				</div>
