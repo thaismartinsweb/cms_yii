@@ -1973,3 +1973,438 @@ Stack trace:
 REQUEST_URI=/new
 HTTP_REFERER=https://dev.bcash.com.br/admin/photogallery/index
 ---
+2014/09/26 19:49:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/26 19:49:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/26 19:49:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/26 19:49:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+HTTP_REFERER=https://dev.bcash.com.br/admin/default/login
+---
+2014/09/26 19:49:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "ad/default/index".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('ad/default/inde...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ad
+---
+2014/09/26 19:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin
+---
+2014/09/26 19:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin
+---
+2014/09/26 19:58:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "css/fonts.googleapis.com/css".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('css/fonts.googl...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/fonts.googleapis.com/css?family=Open+Sans:300,400,600,700
+HTTP_REFERER=https://dev.bcash.com.br/admin
+---
+2014/09/26 19:58:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin
+---
+2014/09/26 19:58:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin
+---
+2014/09/26 19:59:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin
+---
+2014/09/26 19:59:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin
+---
+2014/09/26 19:59:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/config
+---
+2014/09/26 19:59:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/config
+---
+2014/09/26 19:59:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 19:59:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 19:59:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 19:59:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:00:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:00:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:01:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:01:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:01:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:01:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:02:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:02:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:02:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:02:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:02:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:02:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:02:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:02:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:02:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:02:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://dev.bcash.com.br/admin/menu
+---
+2014/09/26 20:31:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/26 20:31:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "favicon.ico".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/09/26 20:32:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "home/index".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('home/index')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+HTTP_REFERER=https://admin.bcash.com.br/admin/default/login
+---
+2014/09/26 20:32:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://admin.bcash.com.br/admin
+---
+2014/09/26 20:32:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://admin.bcash.com.br/admin
+---
+2014/09/26 20:33:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://admin.bcash.com.br/admin
+---
+2014/09/26 20:33:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://admin.bcash.com.br/admin
+---
+2014/09/26 20:33:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://admin.bcash.com.br/admin
+---
+2014/09/26 20:33:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://admin.bcash.com.br/admin
+---
+2014/09/26 20:33:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://admin.bcash.com.br/admin
+---
+2014/09/26 20:33:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://admin.bcash.com.br/admin
+---
+2014/09/26 20:33:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/jquery.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.m...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.map
+HTTP_REFERER=https://admin.bcash.com.br/admin
+---
+2014/09/26 20:33:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "js/lightbox.min.map".' in /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/administrador/workspace/bcash-admin/framework/web/CWebApplication.php(141): CWebApplication->runController('js/lightbox.min...')
+#1 /home/administrador/workspace/bcash-admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/administrador/workspace/bcash-admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+HTTP_REFERER=https://admin.bcash.com.br/admin
+---

@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
 /* Global Styles */
 /* ------------------------------- */
 /* -------------------------------------------------------------
@@ -548,6 +548,11 @@ table.dataTable thead .sorting:after {
   float: left;
   margin-right: 15px;
   margin-top: 5px; }
+  
+.user-info-profile-image .fa {
+  font-size:60px;
+  color:#767e96;
+  padding-left:15px;}
 
 .turquoise {
   background-color: #1abc9c;

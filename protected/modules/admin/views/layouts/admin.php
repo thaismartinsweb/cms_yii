@@ -28,6 +28,7 @@
 			<!-- LOGO -->
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html">
+					<i class="fa fa-pencil-square-o"></i>
 					<?php echo CHtml::encode(Yii::app()->params['pageName']); ?>
 				</a>
 			</div>
@@ -55,11 +56,11 @@
 					<li>
 						<div class="user-info-wrapper">	
 							<div class="user-info-profile-image">
-								<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/profile-1.jpg" alt="" width="65" height="65" />
+								<i class="fa fa-user"></i>
 							</div>
 							<div class="user-info">
 								<div class="user-welcome">Bem vindo</div>
-								<div class="username">John <strong>Doe</strong></div>
+								<div class="username"><?php echo Yii::app()->user->getName(); ?></div>
 							</div>
 						</div>
 					</li>
@@ -99,7 +100,7 @@
 			<?php echo $content; ?>
 			
 			<div style="clear:both"></div>
-			<div id="footer" style="text-align:center">2014 - <?php echo date('Y'); ?> | Desenvolvido por <a href="#">tmartins.com</a></div>
+			<div id="footer" style="text-align:center">2014 - <?php echo date('Y'); ?> | Desenvolvido por <a href="#">tmartins.com.br</a></div>
 		</div>
 	</div>
 	
