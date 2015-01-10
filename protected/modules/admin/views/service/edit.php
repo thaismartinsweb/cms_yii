@@ -24,33 +24,14 @@
 						<?php echo $form->labelEx($model, 'title'); ?>
 						<?php echo $form->textField($model, 'title', array('class' => 'form-control field-xxlg', 'placeholder' => 'Título')) ?>
 					</div>
-					
-					<?php if($menus){ ?>
+
+					<?php if($icons){ ?>
 						<div class="form-group">
-							<?php echo $form->labelEx($model, 'menu_id'); ?>
-							<?php echo $form->dropDownList($model, 'menu_id', $menus, array('class' => 'form-control  field-md', 'empty' => '')) ?>
-						</div>
-					<?php }?>
-					
-					<?php if($types){ ?>
-						<div class="form-group">
-							<?php echo $form->labelEx($model, 'type_page_id'); ?>
-							<?php echo $form->dropDownList($model, 'type_page_id', $types, array('class' => 'form-control field-sm')) ?>
+							<?php echo $form->labelEx($model, 'icon'); ?>
+							<?php echo $form->dropDownList($model, 'icon', $icons, array('class' => 'form-control field-sm')) ?>
 						</div>
 					<?php }?>
 
-					<div class="form-group">
-						<?php echo $form->labelEx($model, 'image'); ?>
-						<?php echo $form->fileField($model, 'image'); ?>
-						
-						<?php if(isset($model['image']) && $model['image'] != ""){ ?>
-							<?php $image = '/public/' . Yii::app()->controller->id . '/' . $model['image'];?>
-							<a href="<?php echo $image ?>" data-lightbox="<?php echo $model['image']?>">
-								<?php echo CHtml::image($image, 'Imagem', array('style' => 'max-width:200px;margin:10px;'));?>
-							</a>
-						<?php }?>
-					</div>
-					
 					<div class="form-group">
 						<?php echo $form->labelEx($model, 'description'); ?>
 						<?php echo $form->textArea($model, 'description', array('class' => 'form-control field-xxlg', 'placeholder' => 'Breve descrição sobre este conteúdo')) ?>

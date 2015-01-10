@@ -1,6 +1,7 @@
 CREATE SCHEMA `cms` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
 USE cms;
 
+
 CREATE TABLE `cms`.`module` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(100) NOT NULL,
@@ -11,19 +12,20 @@ ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_general_ci;
 
+
 insert into module values
 (null, 'Home', '', 'home'),
 (null, 'Dados do Site', 'config', 'cogs'),
 (null, 'Menu', 'menu', 'tasks'),
 (null, 'Conteúdo', 'content', 'quote-left'),
-(null, 'Fotos', 'photogallery', 'camera-retro'),
-(null, 'Galeria de Videos', 'videogallery', 'film'),
+(null, 'Galeria de Fotos', 'photogallery', 'camera-retro'),
+(null, 'Portfolio', 'portfolio', 'desktop'),
+(null, 'Serviços', 'service', 'code'),
 (null, 'Videos', 'video', 'play-circle'),
 (null, 'Categoria de Produtos', 'productcategory', 'shopping-cart'),
 (null, 'Produtos', 'product', 'gift'),
 (null, 'Contatos', 'contact', 'envelope-o'),
 (null, 'Ajuda', 'help', 'info-circle');
-
 
 
 
@@ -107,6 +109,23 @@ insert into type_page values
 
 
 
+CREATE TABLE `cms`.`type_portfolio` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`))
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+
+INSERT INTO `cms`.`type_portfolio` VALUES
+(null, 'DESIGN'),
+(null, 'HTML'),
+(null, 'CSS'),
+(null, 'PHP'),
+(null, 'JAVA'),
+(null, 'CMS'),
+(null, 'ECOMMERCE');
+
 
 
 CREATE TABLE `cms`.`content` (
@@ -149,9 +168,11 @@ ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_general_ci;
 
+
 INSERT INTO type_video VALUES
 (null, 'YouTube', 'youtube'),
 (null, 'Vimeo', 'vimeo');
+
 
 
 CREATE TABLE `cms`.`video_gallery` (
@@ -224,6 +245,52 @@ CREATE TABLE `cms`.`product` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_general_ci;
+
+
+CREATE TABLE `cms`.`portfolio` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(100) NULL,
+  `site` VARCHAR(100) NULL,
+  `description` TEXT NULL,
+  `content` TEXT NULL,
+  `image` VARCHAR(100) NULL,
+  PRIMARY KEY (`id`))
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+
+
+CREATE TABLE `cms`.`type_x_portfolio` (
+  `id_type` INT(11) NOT NULL,
+  `id_portfolio` INT(11) NOT NULL,
+  INDEX `fk_type_x_portfolio_2_idx` (`id_portfolio` ASC),
+  PRIMARY KEY (`id_type`, `id_portfolio`),
+  CONSTRAINT `fk_type_x_portfolio_1`
+    FOREIGN KEY (`id_type`)
+    REFERENCES `cms`.`type_portfolio` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_type_x_portfolio_2`
+    FOREIGN KEY (`id_portfolio`)
+    REFERENCES `cms`.`portfolio` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+
+
+CREATE TABLE `cms`.`service` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(100) NULL,
+  `description` TEXT NULL,
+  `content` TEXT NULL,
+  `icon` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`))
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+
 
 
 CREATE TABLE `cms`.`contact` (

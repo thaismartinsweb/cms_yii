@@ -2,15 +2,34 @@
 
 class ConfigController extends Controller
 {
-	
-	public function beforeAction($action){
-		$this->post   = isset($_POST['Config']) ? $_POST['Config'] : false;
-		return parent::beforeAction($action);
-	}
-	
 	public function actionIndex()
 	{
-		$this->render('index', array('model' => $this->getCurrentModel(1)));
+		Yii::log('Editando Dados do Site', 'info');
+		
+		$model = Config::model()->findByPk(1);
+		
+		if(!$model)
+		{
+			$model = new Config();
+		}
+
+		if(isset($_POST['Config']))
+		{
+			$model->attributes = $_POST['Config'];
+			
+			$image = CUploadedFile::getInstance($model, 'image');
+			
+			if($image)
+			{
+				$file = Yii::app()->params['publicPath'].Yii::app()->controller->id.'/'.$image->name;
+				$image->saveAs($file);
+				$model->image = $image->name;
+			}
+			
+			$model->save();
+		}
+		
+		$this->render('index', array('model' => $model));
 	}
 	
 }

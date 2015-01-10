@@ -24,12 +24,12 @@
 
 <body>
 	<div id="wrapper">
-		<nav class="navbar navbar-default navbar-static-top" role="navigation">		
+		<nav class="navbar navbar-green navbar-static-top" role="navigation">		
 			<!-- LOGO -->
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html">
 					<i class="fa fa-pencil-square-o"></i>
-					<?php echo CHtml::encode(Yii::app()->params['pageName']); ?>
+					CMS
 				</a>
 			</div>
 			<!-- / LOGO -->
@@ -37,7 +37,7 @@
 			<!-- / LOGOUT -->
 			<ul class="nav navbar-top-links navbar-right">
 				<li class="dropdown">
-					<a target="_blank" href="<?php echo Yii::app()->params['url']?>" title="Visualizar Site">
+					<a target="_blank" href="<?php echo Yii::app()->createUrl('index')?>" title="Visualizar Site">
 						<i class="fa fa-search-plus fa-2x fa-fw"></i>
 					</a>
 				</li>
@@ -85,22 +85,20 @@
 		<div id="page-wrapper">
 			<div class="row">
 				<div class="col-lg-12">
-				<h3 class="page-header text-asbestos"><?php echo CHtml::encode(Yii::app()->name); ?></h3>
-				
-					<div style="margin:25px 0 15px 0;">
-						<?php if(isset($this->breadcrumbs)):?>
-							<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-									'links'=>$this->breadcrumbs,
-									'homeLink' => CHtml::link('Home', Yii::app()->homeUrl . 'admin'),)); ?>
-						<?php endif?>
-					</div>
+					<h3 class="page-header text-asbestos"><?php echo CHtml::encode(Yii::app()->name); ?></h3>
 				</div>
 			</div>
-	
+			
+			<?php if(isset($this->breadcrumbs)):?>
+				<?php $this->widget('zii.widgets.CBreadcrumbs', array(
+						'links' => $this->breadcrumbs,
+						'homeLink' => CHtml::link('Home', Yii::app()->createURl('admin')) )); ?>
+			<?php endif?>
+			
 			<?php echo $content; ?>
 			
 			<div style="clear:both"></div>
-			<div id="footer" style="text-align:center">2014 - <?php echo date('Y'); ?> | Desenvolvido por <a href="#">tmartins.com.br</a></div>
+			<div id="footer" style="text-align:center">2014 - <?php echo date('Y'); ?> | Desenvolvido por <a href="http://thaismartins.rocks" target="_blank">thaismartins.rocks</a></div>
 		</div>
 	</div>
 	

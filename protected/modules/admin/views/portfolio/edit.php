@@ -24,18 +24,11 @@
 						<?php echo $form->labelEx($model, 'title'); ?>
 						<?php echo $form->textField($model, 'title', array('class' => 'form-control field-xxlg', 'placeholder' => 'Título')) ?>
 					</div>
-					
-					<?php if($menus){ ?>
-						<div class="form-group">
-							<?php echo $form->labelEx($model, 'menu_id'); ?>
-							<?php echo $form->dropDownList($model, 'menu_id', $menus, array('class' => 'form-control  field-md', 'empty' => '')) ?>
-						</div>
-					<?php }?>
-					
+
 					<?php if($types){ ?>
 						<div class="form-group">
-							<?php echo $form->labelEx($model, 'type_page_id'); ?>
-							<?php echo $form->dropDownList($model, 'type_page_id', $types, array('class' => 'form-control field-sm')) ?>
+							<?php echo CHtml::label('Categorias', 'Categorias'); ?>
+							<?php echo CHtml::dropDownList('type_portfolio[]', $typesSelected, $types, array('multiple' => 'multiple', 'class' => 'form-control field-sm')) ?>
 						</div>
 					<?php }?>
 

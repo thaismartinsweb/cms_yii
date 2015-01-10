@@ -1,24 +1,20 @@
 <?php
 
 /**
- * This is the model class for table "config".
+ * This is the model class for table "type_x_portfolio".
  *
- * The followings are the available columns in table 'config':
- * @property integer $id
- * @property string $title
- * @property string $image
- * @property string $email
- * @property string $contact
- * @property string $address
+ * The followings are the available columns in table 'type_x_portfolio':
+ * @property integer $id_type
+ * @property integer $id_portfolio
  */
-class Config extends CActiveRecord
+class TypeXPortfolio extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'config';
+		return 'type_x_portfolio';
 	}
 
 	/**
@@ -26,13 +22,14 @@ class Config extends CActiveRecord
 	 */
 	public function rules()
 	{
+		// NOTE: you should only define rules for those attributes that
+		// will receive user inputs.
 		return array(
-			array('title, email', 'required', 'message' => 'O campo {attribute} não pode ficar vazio.'),
-			array('title, email', 'length', 'max'=>200),
-			array('image, contact', 'length', 'max'=>100),
-			array('image', 'file', 'types' => 'jpg, gif, png', 'allowEmpty' => true),
-			array('id, title, email, image, contact, site, skype, github, behance, linkedin', 'safe'),
-			array('id, title, email, image, contact, site, skype, github, behance, linkedin', 'safe', 'on'=>'search'),
+			array('id_type, id_portfolio', 'required'),
+			array('id_type, id_portfolio', 'numerical', 'integerOnly'=>true),
+			// The following rule is used by search().
+			// @todo Please remove those attributes that should not be searched.
+			array('id_type, id_portfolio', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -53,16 +50,8 @@ class Config extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'Id',
-			'title' => 'Título do Site',
-			'image' => 'Logo',
-			'email' => 'Email',
-			'contact' => 'Telefone',
-			'site' => 'Site',
-			'skype' => 'Skype',
-			'behance' => 'Behance',
-			'github' => 'Github',
-			'linkedin' => 'linkedin',
+			'id_type' => 'Id Type',
+			'id_portfolio' => 'Id Portfolio',
 		);
 	}
 
@@ -84,12 +73,8 @@ class Config extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('title',$this->title,true);
-		$criteria->compare('image',$this->image,true);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('contact',$this->contact,true);
-		$criteria->compare('address',$this->address,true);
+		$criteria->compare('id_type',$this->id_type);
+		$criteria->compare('id_portfolio',$this->id_portfolio);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -100,10 +85,19 @@ class Config extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Config the static model class
+	 * @return TypeXPortfolio the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+	
+	public function deleteAllByPortfolio($id)
+	{
+		$criteria = new CDbCriteria();
+		$criteria->condition = 'id_portfolio=:id';
+		$criteria->params = array(':id'=> $id);
+		
+		return self::deleteAll($criteria);
 	}
 }

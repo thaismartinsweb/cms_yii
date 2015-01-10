@@ -1,24 +1,23 @@
 <?php
 
 /**
- * This is the model class for table "config".
+ * This is the model class for table "service".
  *
- * The followings are the available columns in table 'config':
+ * The followings are the available columns in table 'service':
  * @property integer $id
  * @property string $title
- * @property string $image
- * @property string $email
- * @property string $contact
- * @property string $address
+ * @property string $description
+ * @property string $content
+ * @property string $icon
  */
-class Config extends CActiveRecord
+class Service extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'config';
+		return 'service';
 	}
 
 	/**
@@ -26,13 +25,16 @@ class Config extends CActiveRecord
 	 */
 	public function rules()
 	{
+		// NOTE: you should only define rules for those attributes that
+		// will receive user inputs.
 		return array(
-			array('title, email', 'required', 'message' => 'O campo {attribute} não pode ficar vazio.'),
-			array('title, email', 'length', 'max'=>200),
-			array('image, contact', 'length', 'max'=>100),
-			array('image', 'file', 'types' => 'jpg, gif, png', 'allowEmpty' => true),
-			array('id, title, email, image, contact, site, skype, github, behance, linkedin', 'safe'),
-			array('id, title, email, image, contact, site, skype, github, behance, linkedin', 'safe', 'on'=>'search'),
+			array('title', 'required'),
+			array('title', 'length', 'max'=>100),
+			array('icon', 'length', 'max'=>45),
+			array('description, content', 'safe'),
+			// The following rule is used by search().
+			// @todo Please remove those attributes that should not be searched.
+			array('id, title, description, content, icon', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,15 +56,10 @@ class Config extends CActiveRecord
 	{
 		return array(
 			'id' => 'Id',
-			'title' => 'Título do Site',
-			'image' => 'Logo',
-			'email' => 'Email',
-			'contact' => 'Telefone',
-			'site' => 'Site',
-			'skype' => 'Skype',
-			'behance' => 'Behance',
-			'github' => 'Github',
-			'linkedin' => 'linkedin',
+			'title' => 'Título',
+			'description' => 'Descrição',
+			'content' => 'Conteúdo',
+			'icon' => 'Icone',
 		);
 	}
 
@@ -86,10 +83,9 @@ class Config extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
-		$criteria->compare('image',$this->image,true);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('contact',$this->contact,true);
-		$criteria->compare('address',$this->address,true);
+		$criteria->compare('description',$this->description,true);
+		$criteria->compare('content',$this->content,true);
+		$criteria->compare('icon',$this->icon,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -100,7 +96,7 @@ class Config extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Config the static model class
+	 * @return Service the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

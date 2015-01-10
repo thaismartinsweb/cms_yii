@@ -3,17 +3,19 @@
 class DefaultController extends Controller
 { 	
  	public function actionLogin(){
+ 		
  		$this->layout = 'main';
+ 		
  		$model = new User();
  		$data['model'] = $model;
  		
  		if(isset($_POST['User'])){
  			
  			$model->attributes = $_POST['User'];
- 			
+
  			if($model->validate() && $model->login())
  			{
- 				$this->redirect(Yii::app()->user->returnUrl);
+ 				$this->redirect($this->createUrl('default/index'));
  			} 
  		}
  		
